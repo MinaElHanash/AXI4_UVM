@@ -1,0 +1,103 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /AXI_top/DUT/AXI_assert_inst
+=== Design Unit: work.AXI_assertions
+=================================================================================
+
+Assertion Coverage:
+    Assertions                      10         7         3    70.00%
+--------------------------------------------------------------------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
+                                                  Count        Count    Count      Count      Count       Count  Count          
+--------------------------------------------------------------------------------------------------------------------------------
+/AXI_top/DUT/AXI_assert_inst/assert_awvalid_stable
+                     AXI_assertions.sv(33)              0          0    3513651          1    3513652          0           0 off
+/AXI_top/DUT/AXI_assert_inst/assert_wvalid_stable
+                     AXI_assertions.sv(40)              0          0    3513651          1    3513652          0           0 off
+/AXI_top/DUT/AXI_assert_inst/assert_bvalid_stable
+                     AXI_assertions.sv(47)              0      12550    3501101          1    3513652          0           2 off
+/AXI_top/DUT/AXI_assert_inst/assert_arvalid_stable
+                     AXI_assertions.sv(54)              0          0    3513651          1    3513652          0           0 off
+/AXI_top/DUT/AXI_assert_inst/assert_rvalid_stable
+                     AXI_assertions.sv(61)              0    1007476    2506175          1    3513652          0           2 off
+/AXI_top/DUT/AXI_assert_inst/assert_awvalid_no_x
+                     AXI_assertions.sv(65)              0       5033    3508618          1    3513652          0           1 off
+/AXI_top/DUT/AXI_assert_inst/assert_wvalid_no_x
+                     AXI_assertions.sv(66)              0     622680    2890971          1    3513652          0           1 off
+/AXI_top/DUT/AXI_assert_inst/assert_bvalid_no_x
+                     AXI_assertions.sv(67)              0      17583    3496068          1    3513652          0           1 off
+/AXI_top/DUT/AXI_assert_inst/assert_arvalid_no_x
+                     AXI_assertions.sv(68)              0       4996    3508655          1    3513652          0           1 off
+/AXI_top/DUT/AXI_assert_inst/assert_rvalid_no_x
+                     AXI_assertions.sv(69)              0    1613838    1899813          1    3513652          0           1 off
+
+=================================================================================
+=== Instance: /AXI_directed_sequence_pkg
+=== Design Unit: work.AXI_directed_sequence_pkg
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       2         2         0   100.00%
+--------------------------------------------------------------------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
+                                                  Count        Count    Count      Count      Count       Count  Count          
+--------------------------------------------------------------------------------------------------------------------------------
+/AXI_directed_sequence_pkg/AXI_directed_sequence/body/#anonblk#208936567#102#4#/#ublk#208936567#102/immed__117
+                     AXI_directed_sequence.sv(117)
+                                                        0         16          0          0         16          0           0 off
+/AXI_directed_sequence_pkg/AXI_directed_sequence/body/#anonblk#208936567#102#4#/#ublk#208936567#102/immed__106
+                     AXI_directed_sequence.sv(106)
+                                                        0         16          0          0         16          0           0 off
+
+=================================================================================
+=== Instance: /AXI_sequence_pkg
+=== Design Unit: work.AXI_sequence_pkg
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       1         1         0   100.00%
+--------------------------------------------------------------------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
+                                                  Count        Count    Count      Count      Count       Count  Count          
+--------------------------------------------------------------------------------------------------------------------------------
+/AXI_sequence_pkg/AXI_sequence/body/#ublk#33784391#20/immed__23
+                     AXI_sequence.sv(23)                0      10000          0          0      10000          0           0 off
+
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
+                                                  Count        Count    Count      Count      Count       Count  Count          
+--------------------------------------------------------------------------------------------------------------------------------
+/AXI_top/DUT/AXI_assert_inst/assert_awvalid_stable
+                     AXI_assertions.sv(33)              0          0    3513651          1    3513652          0           0 off
+/AXI_top/DUT/AXI_assert_inst/assert_wvalid_stable
+                     AXI_assertions.sv(40)              0          0    3513651          1    3513652          0           0 off
+/AXI_top/DUT/AXI_assert_inst/assert_bvalid_stable
+                     AXI_assertions.sv(47)              0      12550    3501101          1    3513652          0           2 off
+/AXI_top/DUT/AXI_assert_inst/assert_arvalid_stable
+                     AXI_assertions.sv(54)              0          0    3513651          1    3513652          0           0 off
+/AXI_top/DUT/AXI_assert_inst/assert_rvalid_stable
+                     AXI_assertions.sv(61)              0    1007476    2506175          1    3513652          0           2 off
+/AXI_top/DUT/AXI_assert_inst/assert_awvalid_no_x
+                     AXI_assertions.sv(65)              0       5033    3508618          1    3513652          0           1 off
+/AXI_top/DUT/AXI_assert_inst/assert_wvalid_no_x
+                     AXI_assertions.sv(66)              0     622680    2890971          1    3513652          0           1 off
+/AXI_top/DUT/AXI_assert_inst/assert_bvalid_no_x
+                     AXI_assertions.sv(67)              0      17583    3496068          1    3513652          0           1 off
+/AXI_top/DUT/AXI_assert_inst/assert_arvalid_no_x
+                     AXI_assertions.sv(68)              0       4996    3508655          1    3513652          0           1 off
+/AXI_top/DUT/AXI_assert_inst/assert_rvalid_no_x
+                     AXI_assertions.sv(69)              0    1613838    1899813          1    3513652          0           1 off
+/AXI_directed_sequence_pkg/AXI_directed_sequence/body/#anonblk#208936567#102#4#/#ublk#208936567#102/immed__117
+                     AXI_directed_sequence.sv(117)
+                                                        0         16          0          0         16          0           0 off
+/AXI_directed_sequence_pkg/AXI_directed_sequence/body/#anonblk#208936567#102#4#/#ublk#208936567#102/immed__106
+                     AXI_directed_sequence.sv(106)
+                                                        0         16          0          0         16          0           0 off
+/AXI_sequence_pkg/AXI_sequence/body/#ublk#33784391#20/immed__23
+                     AXI_sequence.sv(23)                0      10000          0          0      10000          0           0 off
+
+Total Coverage By Instance (filtered view): 76.92%
+

@@ -1,0 +1,2104 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /AXI_top/DUT/mem_inst
+=== Design Unit: work.axi4_memory
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         2         2         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /AXI_top/DUT/mem_inst
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File axi_memory.v
+------------------------------------IF Branch------------------------------------
+    26                                   2037403     Count coming in to IF
+    26              1                     559628     
+                                         1477775     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       2         2         0   100.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /AXI_top/DUT/mem_inst --
+
+  File axi_memory.v
+----------------Focused Condition View-------------------
+Line       26 Item    1  (mem_en && mem_we)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       6         6         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /AXI_top/DUT/mem_inst --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File axi_memory.v
+    22              1                    1670725     
+    25              1                    2037403     
+    27              1                     559628     
+    33              1                          1     
+    33              2                       1024     
+    34              1                       1024     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        220       156        64    70.90%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /AXI_top/DUT/mem_inst --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                           j[31-0]           0           0        0.00 
+
+Total Node Count     =        110 
+Toggled Node Count   =         78 
+Untoggled Node Count =         32 
+
+Toggle Coverage      =      70.90% (156 of 220 bins)
+
+=================================================================================
+=== Instance: /AXI_top/DUT/AXI_assert_inst
+=== Design Unit: work.AXI_assertions
+=================================================================================
+
+Assertion Coverage:
+    Assertions                      10         7         3    70.00%
+--------------------------------------------------------------------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
+                                                  Count        Count    Count      Count      Count       Count  Count          
+--------------------------------------------------------------------------------------------------------------------------------
+/AXI_top/DUT/AXI_assert_inst/assert_awvalid_stable
+                     AXI_assertions.sv(33)              0          0    3513651          1    3513652          0           0 off
+/AXI_top/DUT/AXI_assert_inst/assert_wvalid_stable
+                     AXI_assertions.sv(40)              0          0    3513651          1    3513652          0           0 off
+/AXI_top/DUT/AXI_assert_inst/assert_bvalid_stable
+                     AXI_assertions.sv(47)              0      12550    3501101          1    3513652          0           2 off
+/AXI_top/DUT/AXI_assert_inst/assert_arvalid_stable
+                     AXI_assertions.sv(54)              0          0    3513651          1    3513652          0           0 off
+/AXI_top/DUT/AXI_assert_inst/assert_rvalid_stable
+                     AXI_assertions.sv(61)              0    1007476    2506175          1    3513652          0           2 off
+/AXI_top/DUT/AXI_assert_inst/assert_awvalid_no_x
+                     AXI_assertions.sv(65)              0       5033    3508618          1    3513652          0           1 off
+/AXI_top/DUT/AXI_assert_inst/assert_wvalid_no_x
+                     AXI_assertions.sv(66)              0     622680    2890971          1    3513652          0           1 off
+/AXI_top/DUT/AXI_assert_inst/assert_bvalid_no_x
+                     AXI_assertions.sv(67)              0      17583    3496068          1    3513652          0           1 off
+/AXI_top/DUT/AXI_assert_inst/assert_arvalid_no_x
+                     AXI_assertions.sv(68)              0       4996    3508655          1    3513652          0           1 off
+/AXI_top/DUT/AXI_assert_inst/assert_rvalid_no_x
+                     AXI_assertions.sv(69)              0    1613838    1899813          1    3513652          0           1 off
+
+Directive Coverage:
+    Directives                       5         2         3    40.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/AXI_top/DUT/AXI_assert_inst/cover_awvalid_stable 
+                                         AXI_assertions Verilog  SVA  AXI_assertions.sv(34)
+                                                                                 0 ZERO      
+/AXI_top/DUT/AXI_assert_inst/cover_wvalid_stable 
+                                         AXI_assertions Verilog  SVA  AXI_assertions.sv(41)
+                                                                                 0 ZERO      
+/AXI_top/DUT/AXI_assert_inst/cover_bvalid_stable 
+                                         AXI_assertions Verilog  SVA  AXI_assertions.sv(48)
+                                                                              12550 Covered   
+/AXI_top/DUT/AXI_assert_inst/cover_arvalid_stable 
+                                         AXI_assertions Verilog  SVA  AXI_assertions.sv(55)
+                                                                                 0 ZERO      
+/AXI_top/DUT/AXI_assert_inst/cover_rvalid_stable 
+                                         AXI_assertions Verilog  SVA  AXI_assertions.sv(62)
+                                                                              1007476 Covered   
+
+=================================================================================
+=== Instance: /AXI_top/DUT
+=== Design Unit: work.axi4
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        35        33         2    94.28%
+
+================================Branch Details================================
+
+Branch Coverage for instance /AXI_top/DUT
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File axi4.v
+------------------------------------IF Branch------------------------------------
+    102                                  2881888     Count coming in to IF
+    102             1                          3     
+    135             1                    2881885     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    143                                  2881885     Count coming in to CASE
+    144             1                    1641375     
+    161             1                       5033     
+    167             1                    1223398     
+    198             1                      12079     
+    206             1                    ***0***     
+Branch totals: 4 hits of 5 branches = 80.00%
+
+------------------------------------IF Branch------------------------------------
+    149                                  1641375     Count coming in to IF
+    149             1                       5033     
+                                         1636342     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    168                                  1223398     Count coming in to IF
+    168             1                     622680     
+                                          600718     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    170                                   622680     Count coming in to IF
+    170             1                     559628     
+                                           63052     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    179                                   622680     Count coming in to IF
+    179             1                       5033     
+    190             1                     617647     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    184                                     5033     Count coming in to IF
+    184             1                        733     
+    186             1                       4300     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    199                                    12079     Count coming in to IF
+    199             1                       5033     
+                                            7046     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    212                                  2881885     Count coming in to CASE
+    213             1                    1260570     
+    230             1                       4996     
+    239             1                    1616319     
+    275             1                    ***0***     
+Branch totals: 3 hits of 4 branches = 75.00%
+
+------------------------------------IF Branch------------------------------------
+    218                                  1260570     Count coming in to IF
+    218             1                       4996     
+                                         1255574     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    232                                     4996     Count coming in to IF
+    232             1                       4994     
+                                               2     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    241                                  1616319     Count coming in to IF
+    241             1                    1468318     
+    244             1                     148001     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    252                                  1616319     Count coming in to IF
+    252             1                     606362     
+                                         1009957     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    255                                   606362     Count coming in to IF
+    255             1                     601367     
+    267             1                       4995     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    261                                   601367     Count coming in to IF
+    261             1                     546489     
+                                           54878     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                      23        17         6    73.91%
+
+================================Condition Details================================
+
+Condition Coverage for instance /AXI_top/DUT --
+
+  File axi4.v
+----------------Focused Condition View-------------------
+Line       149 Item    1  (AWVALID && AWREADY)
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+     AWVALID         Y
+     AWREADY         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  AWVALID_0             -                             
+  Row   2:          1  AWVALID_1             AWREADY                       
+  Row   3:    ***0***  AWREADY_0             AWVALID                       
+  Row   4:          1  AWREADY_1             AWVALID                       
+
+----------------Focused Condition View-------------------
+Line       168 Item    1  (WVALID && WREADY)
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+      WVALID         Y
+      WREADY         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  WVALID_0              -                             
+  Row   2:          1  WVALID_1              WREADY                        
+  Row   3:    ***0***  WREADY_0              WVALID                        
+  Row   4:          1  WREADY_1              WVALID                        
+
+----------------Focused Condition View-------------------
+Line       170 Item    1  (write_addr_valid && ~write_boundary_cross)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       179 Item    1  (WLAST || (write_burst_cnt == 0))
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+              Input Term   Covered  Reason for no coverage   Hint
+             -----------  --------  -----------------------  --------------
+                   WLAST         Y
+  (write_burst_cnt == 0)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                Non-masking condition(s)      
+ ---------  ---------  --------------------      -------------------------     
+  Row   1:          1  WLAST_0                   ~(write_burst_cnt == 0)       
+  Row   2:          1  WLAST_1                   -                             
+  Row   3:          1  (write_burst_cnt == 0)_0  ~WLAST                        
+  Row   4:    ***0***  (write_burst_cnt == 0)_1  ~WLAST                        
+
+----------------Focused Condition View-------------------
+Line       184 Item    1  (~write_addr_valid || write_boundary_cross)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       199 Item    1  (BREADY && BVALID)
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+      BREADY         Y
+      BVALID         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  BREADY_0              -                             
+  Row   2:          1  BREADY_1              BVALID                        
+  Row   3:    ***0***  BVALID_0              BREADY                        
+  Row   4:          1  BVALID_1              BREADY                        
+
+----------------Focused Condition View-------------------
+Line       218 Item    1  (ARVALID && ARREADY)
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+     ARVALID         Y
+     ARREADY         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  ARVALID_0             -                             
+  Row   2:          1  ARVALID_1             ARREADY                       
+  Row   3:    ***0***  ARREADY_0             ARVALID                       
+  Row   4:          1  ARREADY_1             ARVALID                       
+
+----------------Focused Condition View-------------------
+Line       232 Item    1  (read_addr_valid && ~read_boundary_cross)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       241 Item    1  (read_addr_valid && ~read_boundary_cross)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       252 Item    1  (RREADY && RVALID)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       255 Item    1  (read_burst_cnt > 0)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       261 Item    1  (read_addr_valid && ~read_boundary_cross)
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+           Input Term   Covered  Reason for no coverage   Hint
+          -----------  --------  -----------------------  --------------
+      read_addr_valid         N  '_0' not hit             Hit '_0'
+  read_boundary_cross         Y
+
+     Rows:       Hits  FEC Target             Non-masking condition(s)      
+ ---------  ---------  --------------------   -------------------------     
+  Row   1:    ***0***  read_addr_valid_0      -                             
+  Row   2:          1  read_addr_valid_1      ~read_boundary_cross          
+  Row   3:          1  read_boundary_cross_0  read_addr_valid               
+  Row   4:          1  read_boundary_cross_1  read_addr_valid               
+
+
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      5         5         0   100.00%
+
+================================Expression Details================================
+
+Expression Coverage for instance /AXI_top/DUT --
+
+  File axi4.v
+----------------Focused Expression View-----------------
+Line       64 Item    1  (((write_addr & 4095) + (write_burst_len << write_size)) > 4095)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       65 Item    1  (((read_addr & 4095) + (read_burst_len << read_size)) > 4095)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       68 Item    1  ((write_addr >> 2) < 1024)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       69 Item    1  ((read_addr >> 2) < 1024)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       250 Item    1  (read_burst_cnt == 0)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+
+FSM Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    FSM States                       7         7         0   100.00%
+    FSM Transitions                 10         7         3    70.00%
+
+================================FSM Details================================
+
+FSM Coverage for instance /AXI_top/DUT --
+
+FSM_ID: write_state
+    Current State Object : write_state
+    ----------------------
+    State Value MapInfo :
+    ---------------------
+Line          State Name               Value
+----          ----------               -----
+ 144              W_IDLE                   0
+ 161              W_ADDR                   1
+ 167              W_DATA                   2
+ 198              W_RESP                   3
+    Covered States :
+    ----------------
+                   State           Hit_count
+                   -----           ---------
+                  W_IDLE                5036          
+                  W_ADDR                5033          
+                  W_DATA                5033          
+                  W_RESP                5033          
+    Covered Transitions :
+    ---------------------
+Line            Trans_ID           Hit_count          Transition          
+----            --------           ---------          ----------          
+ 157                   0                5033          W_IDLE -> W_ADDR              
+ 164                   1                5033          W_ADDR -> W_DATA              
+ 181                   3                5033          W_DATA -> W_RESP              
+ 202                   5                5033          W_RESP -> W_IDLE              
+    Uncovered Transitions :
+    -----------------------
+Line            Trans_ID          Transition          
+----            --------          ----------          
+ 116                   2          W_ADDR -> W_IDLE    
+ 116                   4          W_DATA -> W_IDLE    
+
+
+    Summary                       Bins      Hits    Misses  Coverage
+    -------                       ----      ----    ------  --------
+        FSM States                   4         4         0   100.00%
+        FSM Transitions              6         4         2    66.66%
+FSM_ID: read_state
+    Current State Object : read_state
+    ----------------------
+    State Value MapInfo :
+    ---------------------
+Line          State Name               Value
+----          ----------               -----
+ 213              R_IDLE                   0
+ 230              R_ADDR                   1
+ 239              R_DATA                   2
+    Covered States :
+    ----------------
+                   State           Hit_count
+                   -----           ---------
+                  R_IDLE                4998          
+                  R_ADDR                4996          
+                  R_DATA                4996          
+    Covered Transitions :
+    ---------------------
+Line            Trans_ID           Hit_count          Transition          
+----            --------           ---------          ----------          
+ 226                   0                4996          R_IDLE -> R_ADDR              
+ 236                   1                4996          R_ADDR -> R_DATA              
+ 270                   3                4996          R_DATA -> R_IDLE              
+    Uncovered Transitions :
+    -----------------------
+Line            Trans_ID          Transition          
+----            --------          ----------          
+ 117                   2          R_ADDR -> R_IDLE    
+
+
+    Summary                       Bins      Hits    Misses  Coverage
+    -------                       ----      ----    ------  --------
+        FSM States                   3         3         0   100.00%
+        FSM Transitions              4         3         1    75.00%
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      85        83         2    97.64%
+
+================================Statement Details================================
+
+Statement Coverage for instance /AXI_top/DUT --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File axi4.v
+    60              1                          5     
+    61              1                          5     
+    64              1                     622683     
+    65              1                     606366     
+    68              1                     622679     
+    69              1                     606360     
+    101             1                    2881888     
+    104             1                          3     
+    105             1                          3     
+    106             1                          3     
+    107             1                          3     
+    109             1                          3     
+    110             1                          3     
+    111             1                          3     
+    112             1                          3     
+    113             1                          3     
+    116             1                          3     
+    117             1                          3     
+    118             1                          3     
+    119             1                          3     
+    120             1                          3     
+    121             1                          3     
+    124             1                          3     
+    125             1                          3     
+    126             1                          3     
+    127             1                          3     
+    128             1                          3     
+    129             1                          3     
+    130             1                          3     
+    131             1                          3     
+    133             1                          3     
+    137             1                    2881885     
+    138             1                    2881885     
+    145             1                    1641375     
+    146             1                    1641375     
+    147             1                    1641375     
+    151             1                       5033     
+    152             1                       5033     
+    153             1                       5033     
+    154             1                       5033     
+    156             1                       5033     
+    157             1                       5033     
+    163             1                       5033     
+    164             1                       5033     
+    172             1                     559628     
+    173             1                     559628     
+    174             1                     559628     
+    175             1                     559628     
+    180             1                       5033     
+    181             1                       5033     
+    185             1                        733     
+    187             1                       4300     
+    189             1                       5033     
+    192             1                     617647     
+    193             1                     617647     
+    200             1                       5033     
+    201             1                       5033     
+    202             1                       5033     
+    206             1                    ***0***     
+    214             1                    1260570     
+    215             1                    1260570     
+    216             1                    1260570     
+    220             1                       4996     
+    221             1                       4996     
+    222             1                       4996     
+    223             1                       4996     
+    225             1                       4996     
+    226             1                       4996     
+    233             1                       4994     
+    234             1                       4994     
+    236             1                       4996     
+    242             1                    1468318     
+    243             1                    1468318     
+    245             1                     148001     
+    246             1                     148001     
+    249             1                    1616319     
+    250             1                    1616319     
+    253             1                     606362     
+    257             1                     601367     
+    258             1                     601367     
+    262             1                     546489     
+    263             1                     546489     
+    269             1                       4995     
+    270             1                       4995     
+    275             1                    ***0***     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        904       550       354    60.84%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /AXI_top/DUT --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                       ARADDR[0-1]           0           0        0.00 
+                                     ARADDR[16-31]           0           0        0.00 
+                                         ARSIZE[0]           0           0        0.00 
+                                         ARSIZE[1]           0           1       50.00 
+                                         ARSIZE[2]           0           0        0.00 
+                                       AWADDR[0-1]           0           0        0.00 
+                                     AWADDR[16-31]           0           0        0.00 
+                                         AWSIZE[0]           0           0        0.00 
+                                         AWSIZE[1]           0           1       50.00 
+                                         AWSIZE[2]           0           0        0.00 
+                                          BRESP[0]           0           0        0.00 
+                                          RRESP[0]           0           0        0.00 
+                               mem_rdata_reg[31-0]           0           0        0.00 
+                                  read_addr[31-16]           0           0        0.00 
+                                    read_addr[1-0]           0           0        0.00 
+                                 read_addr_incr[1]           0           0        0.00 
+                              read_addr_incr[3-31]           0           0        0.00 
+                                      read_size[2]           0           0        0.00 
+                                      read_size[0]           0           0        0.00 
+                                     read_state[2]           0           0        0.00 
+                                 write_addr[31-16]           0           0        0.00 
+                                   write_addr[1-0]           0           0        0.00 
+                                write_addr_incr[1]           0           0        0.00 
+                             write_addr_incr[3-31]           0           0        0.00 
+                                     write_size[2]           0           0        0.00 
+                                     write_size[0]           0           0        0.00 
+                                    write_state[2]           0           0        0.00 
+
+Total Node Count     =        452 
+Toggled Node Count   =        274 
+Untoggled Node Count =        178 
+
+Toggle Coverage      =      60.84% (550 of 904 bins)
+
+=================================================================================
+=== Instance: /AXI_directed_sequence_pkg
+=== Design Unit: work.AXI_directed_sequence_pkg
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       2         2         0   100.00%
+--------------------------------------------------------------------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
+                                                  Count        Count    Count      Count      Count       Count  Count          
+--------------------------------------------------------------------------------------------------------------------------------
+/AXI_directed_sequence_pkg/AXI_directed_sequence/body/#anonblk#208936567#102#4#/#ublk#208936567#102/immed__117
+                     AXI_directed_sequence.sv(117)
+                                                        0         16          0          0         16          0           0 off
+/AXI_directed_sequence_pkg/AXI_directed_sequence/body/#anonblk#208936567#102#4#/#ublk#208936567#102/immed__106
+                     AXI_directed_sequence.sv(106)
+                                                        0         16          0          0         16          0           0 off
+
+=================================================================================
+=== Instance: /AXI_sequence_pkg
+=== Design Unit: work.AXI_sequence_pkg
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       1         1         0   100.00%
+--------------------------------------------------------------------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
+                                                  Count        Count    Count      Count      Count       Count  Count          
+--------------------------------------------------------------------------------------------------------------------------------
+/AXI_sequence_pkg/AXI_sequence/body/#ublk#33784391#20/immed__23
+                     AXI_sequence.sv(23)                0      10000          0          0      10000          0           0 off
+
+=================================================================================
+=== Instance: /AXI_coverage_pkg
+=== Design Unit: work.AXI_coverage_pkg
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na   100.00%
+        Coverpoints/Crosses         10        na        na        na
+            Covergroup Bins        582       582         0   100.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /AXI_coverage_pkg/AXI_coverage/cg_axi_protocol 
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                   582        582          -                      
+    missing/total bins:                                     0        582          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_awaddr                              100.00%        100          -    Covered              
+        covered/total bins:                                19         19          -                      
+        missing/total bins:                                 0         19          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_araddr                              100.00%        100          -    Covered              
+        covered/total bins:                                19         19          -                      
+        missing/total bins:                                 0         19          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_awlen                               100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_arlen                               100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_write_boundary                      100.00%        100          -    Covered              
+        covered/total bins:                                18         18          -                      
+        missing/total bins:                                 0         18          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_read_boundary                       100.00%        100          -    Covered              
+        covered/total bins:                                18         18          -                      
+        missing/total bins:                                 0         18          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_bresp_trans                         100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_rresp_trans                         100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross cross_awaddr_awlen                          100.00%        100          -    Covered              
+        covered/total bins:                               232        232          -                      
+        missing/total bins:                                 0        232          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross cross_araddr_arlen                          100.00%        100          -    Covered              
+        covered/total bins:                               232        232          -                      
+        missing/total bins:                                 0        232          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance AXI_Protocol_Coverage            100.00%        100          -    Covered              
+    covered/total bins:                                   582        582          -                      
+    missing/total bins:                                     0        582          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_awaddr                              100.00%        100          -    Covered              
+        covered/total bins:                                19         19          -                      
+        missing/total bins:                                 0         19          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin lower_bound                                    21          1          -    Covered              
+        bin upper_bound                                     2          1          -    Covered              
+        bin normal_range[0]                               342          1          -    Covered              
+        bin normal_range[1]                               358          1          -    Covered              
+        bin normal_range[2]                               367          1          -    Covered              
+        bin normal_range[3]                               352          1          -    Covered              
+        bin normal_range[4]                               349          1          -    Covered              
+        bin normal_range[5]                               342          1          -    Covered              
+        bin normal_range[6]                               357          1          -    Covered              
+        bin normal_range[7]                               343          1          -    Covered              
+        bin normal_range[8]                               351          1          -    Covered              
+        bin normal_range[9]                               355          1          -    Covered              
+        bin normal_range[10]                              358          1          -    Covered              
+        bin normal_range[11]                              385          1          -    Covered              
+        bin normal_range[12]                              321          1          -    Covered              
+        bin normal_range[13]                              227          1          -    Covered              
+        bin normal_range[14]                              152          1          -    Covered              
+        bin normal_range[15]                               50          1          -    Covered              
+        bin out_of_range                                    1          1          -    Covered              
+    Coverpoint cp_araddr                              100.00%        100          -    Covered              
+        covered/total bins:                                19         19          -                      
+        missing/total bins:                                 0         19          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin lower_bound                                    21          1          -    Covered              
+        bin upper_bound                                     2          1          -    Covered              
+        bin normal_range[0]                               368          1          -    Covered              
+        bin normal_range[1]                               335          1          -    Covered              
+        bin normal_range[2]                               372          1          -    Covered              
+        bin normal_range[3]                               346          1          -    Covered              
+        bin normal_range[4]                               378          1          -    Covered              
+        bin normal_range[5]                               371          1          -    Covered              
+        bin normal_range[6]                               335          1          -    Covered              
+        bin normal_range[7]                               345          1          -    Covered              
+        bin normal_range[8]                               335          1          -    Covered              
+        bin normal_range[9]                               380          1          -    Covered              
+        bin normal_range[10]                              372          1          -    Covered              
+        bin normal_range[11]                              329          1          -    Covered              
+        bin normal_range[12]                              298          1          -    Covered              
+        bin normal_range[13]                              233          1          -    Covered              
+        bin normal_range[14]                              129          1          -    Covered              
+        bin normal_range[15]                               45          1          -    Covered              
+        bin out_of_range                                    1          1          -    Covered              
+    Coverpoint cp_awlen                               100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin len_vals[0]                                   353          1          -    Covered              
+        bin len_vals[1]                                   328          1          -    Covered              
+        bin len_vals[2]                                   367          1          -    Covered              
+        bin len_vals[3]                                   344          1          -    Covered              
+        bin len_vals[4]                                   300          1          -    Covered              
+        bin len_vals[5]                                   323          1          -    Covered              
+        bin len_vals[6]                                   327          1          -    Covered              
+        bin len_vals[7]                                   279          1          -    Covered              
+        bin len_vals[8]                                   328          1          -    Covered              
+        bin len_vals[9]                                   309          1          -    Covered              
+        bin len_vals[10]                                  303          1          -    Covered              
+        bin len_vals[11]                                  330          1          -    Covered              
+        bin len_vals[12]                                  291          1          -    Covered              
+        bin len_vals[13]                                  300          1          -    Covered              
+        bin len_vals[14]                                  282          1          -    Covered              
+        bin len_vals[15]                                  269          1          -    Covered              
+    Coverpoint cp_arlen                               100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin len_vals[0]                                   364          1          -    Covered              
+        bin len_vals[1]                                   355          1          -    Covered              
+        bin len_vals[2]                                   366          1          -    Covered              
+        bin len_vals[3]                                   324          1          -    Covered              
+        bin len_vals[4]                                   360          1          -    Covered              
+        bin len_vals[5]                                   295          1          -    Covered              
+        bin len_vals[6]                                   314          1          -    Covered              
+        bin len_vals[7]                                   309          1          -    Covered              
+        bin len_vals[8]                                   303          1          -    Covered              
+        bin len_vals[9]                                   312          1          -    Covered              
+        bin len_vals[10]                                  304          1          -    Covered              
+        bin len_vals[11]                                  287          1          -    Covered              
+        bin len_vals[12]                                  281          1          -    Covered              
+        bin len_vals[13]                                  289          1          -    Covered              
+        bin len_vals[14]                                  273          1          -    Covered              
+        bin len_vals[15]                                  259          1          -    Covered              
+    Coverpoint cp_write_boundary                      100.00%        100          -    Covered              
+        covered/total bins:                                18         18          -                      
+        missing/total bins:                                 0         18          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin safe_transfer[0]                               46          1          -    Covered              
+        bin safe_transfer[1]                              123          1          -    Covered              
+        bin safe_transfer[2]                              225          1          -    Covered              
+        bin safe_transfer[3]                              302          1          -    Covered              
+        bin safe_transfer[4]                              342          1          -    Covered              
+        bin safe_transfer[5]                              339          1          -    Covered              
+        bin safe_transfer[6]                              356          1          -    Covered              
+        bin safe_transfer[7]                              368          1          -    Covered              
+        bin safe_transfer[8]                              357          1          -    Covered              
+        bin safe_transfer[9]                              394          1          -    Covered              
+        bin safe_transfer[10]                             353          1          -    Covered              
+        bin safe_transfer[11]                             334          1          -    Covered              
+        bin safe_transfer[12]                             343          1          -    Covered              
+        bin safe_transfer[13]                             376          1          -    Covered              
+        bin safe_transfer[14]                             389          1          -    Covered              
+        bin safe_transfer[15]                             374          1          -    Covered              
+        bin perfect_4kb                                    10          1          -    Covered              
+        bin illegal_cross                                   2          1          -    Covered              
+    Coverpoint cp_read_boundary                       100.00%        100          -    Covered              
+        covered/total bins:                                18         18          -                      
+        missing/total bins:                                 0         18          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin safe_transfer[0]                               52          1          -    Covered              
+        bin safe_transfer[1]                              133          1          -    Covered              
+        bin safe_transfer[2]                              211          1          -    Covered              
+        bin safe_transfer[3]                              312          1          -    Covered              
+        bin safe_transfer[4]                              340          1          -    Covered              
+        bin safe_transfer[5]                              364          1          -    Covered              
+        bin safe_transfer[6]                              386          1          -    Covered              
+        bin safe_transfer[7]                              356          1          -    Covered              
+        bin safe_transfer[8]                              373          1          -    Covered              
+        bin safe_transfer[9]                              329          1          -    Covered              
+        bin safe_transfer[10]                             406          1          -    Covered              
+        bin safe_transfer[11]                             370          1          -    Covered              
+        bin safe_transfer[12]                             327          1          -    Covered              
+        bin safe_transfer[13]                             358          1          -    Covered              
+        bin safe_transfer[14]                             322          1          -    Covered              
+        bin safe_transfer[15]                             348          1          -    Covered              
+        bin perfect_4kb                                     6          1          -    Covered              
+        bin illegal_cross                                   2          1          -    Covered              
+    Coverpoint cp_bresp_trans                         100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin okay                                         4300          1          -    Covered              
+        bin slverr                                        733          1          -    Covered              
+        bin okay_okay                                    3681          1          -    Covered              
+        bin okay_slverr                                   618          1          -    Covered              
+        bin slverr_okay                                   618          1          -    Covered              
+        bin slverr_slverr                                 115          1          -    Covered              
+    Coverpoint cp_rresp_trans                         100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin okay                                         4331          1          -    Covered              
+        bin slverr                                        664          1          -    Covered              
+        bin okay_okay                                    3760          1          -    Covered              
+        bin okay_slverr                                   570          1          -    Covered              
+        bin slverr_okay                                   570          1          -    Covered              
+        bin slverr_slverr                                  94          1          -    Covered              
+    Cross cross_awaddr_awlen                          100.00%        100          -    Covered              
+        covered/total bins:                               232        232          -                      
+        missing/total bins:                                 0        232          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <normal_range[14],len_vals[3]>             18          1          -    Covered              
+            bin <normal_range[14],len_vals[1]>             29          1          -    Covered              
+            bin <normal_range[14],len_vals[2]>             27          1          -    Covered              
+            bin <normal_range[14],len_vals[0]>             27          1          -    Covered              
+            bin <normal_range[13],len_vals[7]>             21          1          -    Covered              
+            bin <normal_range[13],len_vals[3]>             27          1          -    Covered              
+            bin <normal_range[13],len_vals[5]>             20          1          -    Covered              
+            bin <normal_range[13],len_vals[1]>             22          1          -    Covered              
+            bin <normal_range[13],len_vals[6]>             23          1          -    Covered              
+            bin <normal_range[13],len_vals[2]>             22          1          -    Covered              
+            bin <normal_range[13],len_vals[4]>             18          1          -    Covered              
+            bin <normal_range[13],len_vals[0]>             29          1          -    Covered              
+            bin <normal_range[12],len_vals[11]>            17          1          -    Covered              
+            bin <normal_range[12],len_vals[9]>             21          1          -    Covered              
+            bin <normal_range[12],len_vals[10]>            21          1          -    Covered              
+            bin <normal_range[12],len_vals[8]>             21          1          -    Covered              
+            bin <normal_range[12],len_vals[7]>             21          1          -    Covered              
+            bin <normal_range[12],len_vals[3]>             22          1          -    Covered              
+            bin <normal_range[12],len_vals[5]>             24          1          -    Covered              
+            bin <normal_range[12],len_vals[1]>             25          1          -    Covered              
+            bin <normal_range[12],len_vals[6]>             27          1          -    Covered              
+            bin <normal_range[12],len_vals[2]>             20          1          -    Covered              
+            bin <normal_range[12],len_vals[4]>             21          1          -    Covered              
+            bin <normal_range[12],len_vals[0]>             21          1          -    Covered              
+            bin <normal_range[11],len_vals[15]>            26          1          -    Covered              
+            bin <normal_range[9],len_vals[15]>             17          1          -    Covered              
+            bin <normal_range[10],len_vals[15]>            24          1          -    Covered              
+            bin <normal_range[8],len_vals[15]>             24          1          -    Covered              
+            bin <normal_range[11],len_vals[7]>             23          1          -    Covered              
+            bin <normal_range[9],len_vals[7]>              16          1          -    Covered              
+            bin <normal_range[10],len_vals[7]>             19          1          -    Covered              
+            bin <normal_range[8],len_vals[7]>              21          1          -    Covered              
+            bin <normal_range[11],len_vals[11]>            28          1          -    Covered              
+            bin <normal_range[9],len_vals[11]>             29          1          -    Covered              
+            bin <normal_range[10],len_vals[11]>            30          1          -    Covered              
+            bin <normal_range[8],len_vals[11]>             24          1          -    Covered              
+            bin <normal_range[11],len_vals[3]>             29          1          -    Covered              
+            bin <normal_range[9],len_vals[3]>              30          1          -    Covered              
+            bin <normal_range[10],len_vals[3]>             25          1          -    Covered              
+            bin <normal_range[8],len_vals[3]>              23          1          -    Covered              
+            bin <normal_range[11],len_vals[13]>            22          1          -    Covered              
+            bin <normal_range[9],len_vals[13]>             19          1          -    Covered              
+            bin <normal_range[10],len_vals[13]>            22          1          -    Covered              
+            bin <normal_range[8],len_vals[13]>             18          1          -    Covered              
+            bin <normal_range[11],len_vals[5]>             26          1          -    Covered              
+            bin <normal_range[9],len_vals[5]>              26          1          -    Covered              
+            bin <normal_range[10],len_vals[5]>             25          1          -    Covered              
+            bin <normal_range[8],len_vals[5]>              17          1          -    Covered              
+            bin <normal_range[11],len_vals[9]>             19          1          -    Covered              
+            bin <normal_range[9],len_vals[9]>              23          1          -    Covered              
+            bin <normal_range[10],len_vals[9]>             22          1          -    Covered              
+            bin <normal_range[8],len_vals[9]>              25          1          -    Covered              
+            bin <normal_range[11],len_vals[1]>             23          1          -    Covered              
+            bin <normal_range[9],len_vals[1]>              21          1          -    Covered              
+            bin <normal_range[10],len_vals[1]>             16          1          -    Covered              
+            bin <normal_range[8],len_vals[1]>              20          1          -    Covered              
+            bin <normal_range[11],len_vals[14]>            20          1          -    Covered              
+            bin <normal_range[9],len_vals[14]>             25          1          -    Covered              
+            bin <normal_range[10],len_vals[14]>            22          1          -    Covered              
+            bin <normal_range[8],len_vals[14]>             16          1          -    Covered              
+            bin <normal_range[11],len_vals[6]>             19          1          -    Covered              
+            bin <normal_range[9],len_vals[6]>              25          1          -    Covered              
+            bin <normal_range[10],len_vals[6]>             23          1          -    Covered              
+            bin <normal_range[8],len_vals[6]>              21          1          -    Covered              
+            bin <normal_range[11],len_vals[10]>            27          1          -    Covered              
+            bin <normal_range[9],len_vals[10]>             14          1          -    Covered              
+            bin <normal_range[10],len_vals[10]>            22          1          -    Covered              
+            bin <normal_range[8],len_vals[10]>             28          1          -    Covered              
+            bin <normal_range[11],len_vals[2]>             24          1          -    Covered              
+            bin <normal_range[9],len_vals[2]>              23          1          -    Covered              
+            bin <normal_range[10],len_vals[2]>             21          1          -    Covered              
+            bin <normal_range[8],len_vals[2]>              32          1          -    Covered              
+            bin <normal_range[11],len_vals[12]>            24          1          -    Covered              
+            bin <normal_range[9],len_vals[12]>             25          1          -    Covered              
+            bin <normal_range[10],len_vals[12]>            29          1          -    Covered              
+            bin <normal_range[8],len_vals[12]>             15          1          -    Covered              
+            bin <normal_range[11],len_vals[4]>             18          1          -    Covered              
+            bin <normal_range[9],len_vals[4]>              17          1          -    Covered              
+            bin <normal_range[10],len_vals[4]>             15          1          -    Covered              
+            bin <normal_range[8],len_vals[4]>              24          1          -    Covered              
+            bin <normal_range[11],len_vals[8]>             28          1          -    Covered              
+            bin <normal_range[9],len_vals[8]>              20          1          -    Covered              
+            bin <normal_range[10],len_vals[8]>             23          1          -    Covered              
+            bin <normal_range[8],len_vals[8]>              19          1          -    Covered              
+            bin <normal_range[11],len_vals[0]>             29          1          -    Covered              
+            bin <normal_range[9],len_vals[0]>              25          1          -    Covered              
+            bin <normal_range[10],len_vals[0]>             20          1          -    Covered              
+            bin <normal_range[8],len_vals[0]>              24          1          -    Covered              
+            bin <normal_range[7],len_vals[15]>             18          1          -    Covered              
+            bin <normal_range[3],len_vals[15]>             17          1          -    Covered              
+            bin <normal_range[5],len_vals[15]>             24          1          -    Covered              
+            bin <normal_range[1],len_vals[15]>             19          1          -    Covered              
+            bin <normal_range[6],len_vals[15]>             24          1          -    Covered              
+            bin <normal_range[2],len_vals[15]>             28          1          -    Covered              
+            bin <normal_range[4],len_vals[15]>             20          1          -    Covered              
+            bin <normal_range[0],len_vals[15]>             22          1          -    Covered              
+            bin <normal_range[7],len_vals[7]>              16          1          -    Covered              
+            bin <normal_range[3],len_vals[7]>              19          1          -    Covered              
+            bin <normal_range[5],len_vals[7]>              18          1          -    Covered              
+            bin <normal_range[1],len_vals[7]>              20          1          -    Covered              
+            bin <normal_range[6],len_vals[7]>              22          1          -    Covered              
+            bin <normal_range[2],len_vals[7]>              23          1          -    Covered              
+            bin <normal_range[4],len_vals[7]>              17          1          -    Covered              
+            bin <normal_range[0],len_vals[7]>              16          1          -    Covered              
+            bin <normal_range[7],len_vals[11]>             20          1          -    Covered              
+            bin <normal_range[3],len_vals[11]>             25          1          -    Covered              
+            bin <normal_range[5],len_vals[11]>             23          1          -    Covered              
+            bin <normal_range[1],len_vals[11]>             25          1          -    Covered              
+            bin <normal_range[6],len_vals[11]>             33          1          -    Covered              
+            bin <normal_range[2],len_vals[11]>             16          1          -    Covered              
+            bin <normal_range[4],len_vals[11]>             28          1          -    Covered              
+            bin <normal_range[0],len_vals[11]>             26          1          -    Covered              
+            bin <normal_range[7],len_vals[3]>              16          1          -    Covered              
+            bin <normal_range[3],len_vals[3]>              27          1          -    Covered              
+            bin <normal_range[5],len_vals[3]>              13          1          -    Covered              
+            bin <normal_range[1],len_vals[3]>              25          1          -    Covered              
+            bin <normal_range[6],len_vals[3]>              22          1          -    Covered              
+            bin <normal_range[2],len_vals[3]>              24          1          -    Covered              
+            bin <normal_range[4],len_vals[3]>              20          1          -    Covered              
+            bin <normal_range[0],len_vals[3]>              20          1          -    Covered              
+            bin <normal_range[7],len_vals[13]>             23          1          -    Covered              
+            bin <normal_range[3],len_vals[13]>             29          1          -    Covered              
+            bin <normal_range[5],len_vals[13]>             23          1          -    Covered              
+            bin <normal_range[1],len_vals[13]>             18          1          -    Covered              
+            bin <normal_range[6],len_vals[13]>             30          1          -    Covered              
+            bin <normal_range[2],len_vals[13]>             29          1          -    Covered              
+            bin <normal_range[4],len_vals[13]>             20          1          -    Covered              
+            bin <normal_range[0],len_vals[13]>             19          1          -    Covered              
+            bin <normal_range[7],len_vals[5]>              24          1          -    Covered              
+            bin <normal_range[3],len_vals[5]>              12          1          -    Covered              
+            bin <normal_range[5],len_vals[5]>              19          1          -    Covered              
+            bin <normal_range[1],len_vals[5]>              28          1          -    Covered              
+            bin <normal_range[6],len_vals[5]>              15          1          -    Covered              
+            bin <normal_range[2],len_vals[5]>              28          1          -    Covered              
+            bin <normal_range[4],len_vals[5]>              31          1          -    Covered              
+            bin <normal_range[0],len_vals[5]>              17          1          -    Covered              
+            bin <normal_range[7],len_vals[9]>              17          1          -    Covered              
+            bin <normal_range[3],len_vals[9]>              27          1          -    Covered              
+            bin <normal_range[5],len_vals[9]>              29          1          -    Covered              
+            bin <normal_range[1],len_vals[9]>              22          1          -    Covered              
+            bin <normal_range[6],len_vals[9]>              22          1          -    Covered              
+            bin <normal_range[2],len_vals[9]>              22          1          -    Covered              
+            bin <normal_range[4],len_vals[9]>              25          1          -    Covered              
+            bin <normal_range[0],len_vals[9]>              23          1          -    Covered              
+            bin <normal_range[7],len_vals[1]>              28          1          -    Covered              
+            bin <normal_range[3],len_vals[1]>              23          1          -    Covered              
+            bin <normal_range[5],len_vals[1]>              13          1          -    Covered              
+            bin <normal_range[1],len_vals[1]>              18          1          -    Covered              
+            bin <normal_range[6],len_vals[1]>              23          1          -    Covered              
+            bin <normal_range[2],len_vals[1]>              15          1          -    Covered              
+            bin <normal_range[4],len_vals[1]>              18          1          -    Covered              
+            bin <normal_range[0],len_vals[1]>              22          1          -    Covered              
+            bin <normal_range[7],len_vals[14]>             11          1          -    Covered              
+            bin <normal_range[3],len_vals[14]>             33          1          -    Covered              
+            bin <normal_range[5],len_vals[14]>             16          1          -    Covered              
+            bin <normal_range[1],len_vals[14]>             28          1          -    Covered              
+            bin <normal_range[6],len_vals[14]>             25          1          -    Covered              
+            bin <normal_range[2],len_vals[14]>             24          1          -    Covered              
+            bin <normal_range[4],len_vals[14]>             25          1          -    Covered              
+            bin <normal_range[0],len_vals[14]>             26          1          -    Covered              
+            bin <normal_range[7],len_vals[6]>              30          1          -    Covered              
+            bin <normal_range[3],len_vals[6]>              19          1          -    Covered              
+            bin <normal_range[5],len_vals[6]>              25          1          -    Covered              
+            bin <normal_range[1],len_vals[6]>              20          1          -    Covered              
+            bin <normal_range[6],len_vals[6]>              15          1          -    Covered              
+            bin <normal_range[2],len_vals[6]>              22          1          -    Covered              
+            bin <normal_range[4],len_vals[6]>              21          1          -    Covered              
+            bin <normal_range[0],len_vals[6]>              28          1          -    Covered              
+            bin <normal_range[7],len_vals[10]>             21          1          -    Covered              
+            bin <normal_range[3],len_vals[10]>             21          1          -    Covered              
+            bin <normal_range[5],len_vals[10]>             23          1          -    Covered              
+            bin <normal_range[1],len_vals[10]>             26          1          -    Covered              
+            bin <normal_range[6],len_vals[10]>             28          1          -    Covered              
+            bin <normal_range[2],len_vals[10]>             29          1          -    Covered              
+            bin <normal_range[4],len_vals[10]>             21          1          -    Covered              
+            bin <normal_range[0],len_vals[10]>             17          1          -    Covered              
+            bin <normal_range[7],len_vals[2]>              36          1          -    Covered              
+            bin <normal_range[3],len_vals[2]>              17          1          -    Covered              
+            bin <normal_range[5],len_vals[2]>              32          1          -    Covered              
+            bin <normal_range[1],len_vals[2]>              24          1          -    Covered              
+            bin <normal_range[6],len_vals[2]>              14          1          -    Covered              
+            bin <normal_range[2],len_vals[2]>              24          1          -    Covered              
+            bin <normal_range[4],len_vals[2]>              19          1          -    Covered              
+            bin <normal_range[0],len_vals[2]>              18          1          -    Covered              
+            bin <normal_range[7],len_vals[12]>             18          1          -    Covered              
+            bin <normal_range[3],len_vals[12]>             24          1          -    Covered              
+            bin <normal_range[5],len_vals[12]>             20          1          -    Covered              
+            bin <normal_range[1],len_vals[12]>             20          1          -    Covered              
+            bin <normal_range[6],len_vals[12]>             26          1          -    Covered              
+            bin <normal_range[2],len_vals[12]>             22          1          -    Covered              
+            bin <normal_range[4],len_vals[12]>             20          1          -    Covered              
+            bin <normal_range[0],len_vals[12]>             28          1          -    Covered              
+            bin <normal_range[7],len_vals[4]>              21          1          -    Covered              
+            bin <normal_range[3],len_vals[4]>              21          1          -    Covered              
+            bin <normal_range[5],len_vals[4]>              14          1          -    Covered              
+            bin <normal_range[1],len_vals[4]>              21          1          -    Covered              
+            bin <normal_range[6],len_vals[4]>              19          1          -    Covered              
+            bin <normal_range[2],len_vals[4]>              19          1          -    Covered              
+            bin <normal_range[4],len_vals[4]>              25          1          -    Covered              
+            bin <normal_range[0],len_vals[4]>              19          1          -    Covered              
+            bin <normal_range[7],len_vals[8]>              26          1          -    Covered              
+            bin <normal_range[3],len_vals[8]>              23          1          -    Covered              
+            bin <normal_range[5],len_vals[8]>              33          1          -    Covered              
+            bin <normal_range[1],len_vals[8]>              23          1          -    Covered              
+            bin <normal_range[6],len_vals[8]>              18          1          -    Covered              
+            bin <normal_range[2],len_vals[8]>              22          1          -    Covered              
+            bin <normal_range[4],len_vals[8]>              25          1          -    Covered              
+            bin <normal_range[0],len_vals[8]>              21          1          -    Covered              
+            bin <normal_range[7],len_vals[0]>              18          1          -    Covered              
+            bin <normal_range[3],len_vals[0]>              15          1          -    Covered              
+            bin <normal_range[5],len_vals[0]>              17          1          -    Covered              
+            bin <normal_range[1],len_vals[0]>              21          1          -    Covered              
+            bin <normal_range[6],len_vals[0]>              21          1          -    Covered              
+            bin <normal_range[2],len_vals[0]>              20          1          -    Covered              
+            bin <normal_range[4],len_vals[0]>              14          1          -    Covered              
+            bin <normal_range[0],len_vals[0]>              20          1          -    Covered              
+            bin <lower_bound,len_vals[15]>                  2          1          -    Covered              
+            bin <lower_bound,len_vals[7]>                   1          1          -    Covered              
+            bin <lower_bound,len_vals[11]>                  1          1          -    Covered              
+            bin <lower_bound,len_vals[3]>                   2          1          -    Covered              
+            bin <lower_bound,len_vals[13]>                  1          1          -    Covered              
+            bin <lower_bound,len_vals[5]>                   1          1          -    Covered              
+            bin <lower_bound,len_vals[9]>                   1          1          -    Covered              
+            bin <lower_bound,len_vals[1]>                   1          1          -    Covered              
+            bin <lower_bound,len_vals[14]>                  1          1          -    Covered              
+            bin <lower_bound,len_vals[6]>                   1          1          -    Covered              
+            bin <lower_bound,len_vals[10]>                  1          1          -    Covered              
+            bin <lower_bound,len_vals[2]>                   3          1          -    Covered              
+            bin <lower_bound,len_vals[12]>                  1          1          -    Covered              
+            bin <lower_bound,len_vals[4]>                   1          1          -    Covered              
+            bin <lower_bound,len_vals[8]>                   1          1          -    Covered              
+            bin <lower_bound,len_vals[0]>                   2          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin ignore_4kb_cross                   209                     -    Occurred             
+            ignore_bin ignore_out                           1                     -    Occurred             
+    Cross cross_araddr_arlen                          100.00%        100          -    Covered              
+        covered/total bins:                               232        232          -                      
+        missing/total bins:                                 0        232          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <normal_range[14],len_vals[3]>             27          1          -    Covered              
+            bin <normal_range[14],len_vals[1]>             18          1          -    Covered              
+            bin <normal_range[14],len_vals[2]>             24          1          -    Covered              
+            bin <normal_range[14],len_vals[0]>             19          1          -    Covered              
+            bin <normal_range[13],len_vals[7]>             19          1          -    Covered              
+            bin <normal_range[13],len_vals[3]>             25          1          -    Covered              
+            bin <normal_range[13],len_vals[5]>             19          1          -    Covered              
+            bin <normal_range[13],len_vals[1]>             29          1          -    Covered              
+            bin <normal_range[13],len_vals[6]>             20          1          -    Covered              
+            bin <normal_range[13],len_vals[2]>             24          1          -    Covered              
+            bin <normal_range[13],len_vals[4]>             18          1          -    Covered              
+            bin <normal_range[13],len_vals[0]>             30          1          -    Covered              
+            bin <normal_range[12],len_vals[11]>            19          1          -    Covered              
+            bin <normal_range[12],len_vals[9]>             18          1          -    Covered              
+            bin <normal_range[12],len_vals[10]>            26          1          -    Covered              
+            bin <normal_range[12],len_vals[8]>             29          1          -    Covered              
+            bin <normal_range[12],len_vals[7]>             14          1          -    Covered              
+            bin <normal_range[12],len_vals[3]>             18          1          -    Covered              
+            bin <normal_range[12],len_vals[5]>             16          1          -    Covered              
+            bin <normal_range[12],len_vals[1]>             28          1          -    Covered              
+            bin <normal_range[12],len_vals[6]>             19          1          -    Covered              
+            bin <normal_range[12],len_vals[2]>             24          1          -    Covered              
+            bin <normal_range[12],len_vals[4]>             18          1          -    Covered              
+            bin <normal_range[12],len_vals[0]>             28          1          -    Covered              
+            bin <normal_range[11],len_vals[15]>            13          1          -    Covered              
+            bin <normal_range[9],len_vals[15]>             23          1          -    Covered              
+            bin <normal_range[10],len_vals[15]>            21          1          -    Covered              
+            bin <normal_range[8],len_vals[15]>             24          1          -    Covered              
+            bin <normal_range[11],len_vals[7]>             23          1          -    Covered              
+            bin <normal_range[9],len_vals[7]>              19          1          -    Covered              
+            bin <normal_range[10],len_vals[7]>             22          1          -    Covered              
+            bin <normal_range[8],len_vals[7]>              23          1          -    Covered              
+            bin <normal_range[11],len_vals[11]>            19          1          -    Covered              
+            bin <normal_range[9],len_vals[11]>             22          1          -    Covered              
+            bin <normal_range[10],len_vals[11]>            22          1          -    Covered              
+            bin <normal_range[8],len_vals[11]>             23          1          -    Covered              
+            bin <normal_range[11],len_vals[3]>             18          1          -    Covered              
+            bin <normal_range[9],len_vals[3]>              35          1          -    Covered              
+            bin <normal_range[10],len_vals[3]>             25          1          -    Covered              
+            bin <normal_range[8],len_vals[3]>              17          1          -    Covered              
+            bin <normal_range[11],len_vals[13]>            18          1          -    Covered              
+            bin <normal_range[9],len_vals[13]>             21          1          -    Covered              
+            bin <normal_range[10],len_vals[13]>            20          1          -    Covered              
+            bin <normal_range[8],len_vals[13]>             15          1          -    Covered              
+            bin <normal_range[11],len_vals[5]>             21          1          -    Covered              
+            bin <normal_range[9],len_vals[5]>              29          1          -    Covered              
+            bin <normal_range[10],len_vals[5]>             20          1          -    Covered              
+            bin <normal_range[8],len_vals[5]>              15          1          -    Covered              
+            bin <normal_range[11],len_vals[9]>             21          1          -    Covered              
+            bin <normal_range[9],len_vals[9]>              22          1          -    Covered              
+            bin <normal_range[10],len_vals[9]>             24          1          -    Covered              
+            bin <normal_range[8],len_vals[9]>              22          1          -    Covered              
+            bin <normal_range[11],len_vals[1]>             27          1          -    Covered              
+            bin <normal_range[9],len_vals[1]>              15          1          -    Covered              
+            bin <normal_range[10],len_vals[1]>             33          1          -    Covered              
+            bin <normal_range[8],len_vals[1]>              24          1          -    Covered              
+            bin <normal_range[11],len_vals[14]>            17          1          -    Covered              
+            bin <normal_range[9],len_vals[14]>             18          1          -    Covered              
+            bin <normal_range[10],len_vals[14]>            29          1          -    Covered              
+            bin <normal_range[8],len_vals[14]>             23          1          -    Covered              
+            bin <normal_range[11],len_vals[6]>             19          1          -    Covered              
+            bin <normal_range[9],len_vals[6]>              21          1          -    Covered              
+            bin <normal_range[10],len_vals[6]>             15          1          -    Covered              
+            bin <normal_range[8],len_vals[6]>              26          1          -    Covered              
+            bin <normal_range[11],len_vals[10]>            20          1          -    Covered              
+            bin <normal_range[9],len_vals[10]>             20          1          -    Covered              
+            bin <normal_range[10],len_vals[10]>            19          1          -    Covered              
+            bin <normal_range[8],len_vals[10]>             14          1          -    Covered              
+            bin <normal_range[11],len_vals[2]>             26          1          -    Covered              
+            bin <normal_range[9],len_vals[2]>              32          1          -    Covered              
+            bin <normal_range[10],len_vals[2]>             27          1          -    Covered              
+            bin <normal_range[8],len_vals[2]>              20          1          -    Covered              
+            bin <normal_range[11],len_vals[12]>            19          1          -    Covered              
+            bin <normal_range[9],len_vals[12]>             12          1          -    Covered              
+            bin <normal_range[10],len_vals[12]>            20          1          -    Covered              
+            bin <normal_range[8],len_vals[12]>             23          1          -    Covered              
+            bin <normal_range[11],len_vals[4]>             19          1          -    Covered              
+            bin <normal_range[9],len_vals[4]>              47          1          -    Covered              
+            bin <normal_range[10],len_vals[4]>             22          1          -    Covered              
+            bin <normal_range[8],len_vals[4]>              21          1          -    Covered              
+            bin <normal_range[11],len_vals[8]>             29          1          -    Covered              
+            bin <normal_range[9],len_vals[8]>              21          1          -    Covered              
+            bin <normal_range[10],len_vals[8]>             25          1          -    Covered              
+            bin <normal_range[8],len_vals[8]>              22          1          -    Covered              
+            bin <normal_range[11],len_vals[0]>             20          1          -    Covered              
+            bin <normal_range[9],len_vals[0]>              23          1          -    Covered              
+            bin <normal_range[10],len_vals[0]>             28          1          -    Covered              
+            bin <normal_range[8],len_vals[0]>              23          1          -    Covered              
+            bin <normal_range[7],len_vals[15]>             16          1          -    Covered              
+            bin <normal_range[3],len_vals[15]>             18          1          -    Covered              
+            bin <normal_range[5],len_vals[15]>             20          1          -    Covered              
+            bin <normal_range[1],len_vals[15]>             32          1          -    Covered              
+            bin <normal_range[6],len_vals[15]>             20          1          -    Covered              
+            bin <normal_range[2],len_vals[15]>             24          1          -    Covered              
+            bin <normal_range[4],len_vals[15]>             24          1          -    Covered              
+            bin <normal_range[0],len_vals[15]>             16          1          -    Covered              
+            bin <normal_range[7],len_vals[7]>              24          1          -    Covered              
+            bin <normal_range[3],len_vals[7]>              15          1          -    Covered              
+            bin <normal_range[5],len_vals[7]>              21          1          -    Covered              
+            bin <normal_range[1],len_vals[7]>              19          1          -    Covered              
+            bin <normal_range[6],len_vals[7]>              34          1          -    Covered              
+            bin <normal_range[2],len_vals[7]>              29          1          -    Covered              
+            bin <normal_range[4],len_vals[7]>              19          1          -    Covered              
+            bin <normal_range[0],len_vals[7]>              25          1          -    Covered              
+            bin <normal_range[7],len_vals[11]>             24          1          -    Covered              
+            bin <normal_range[3],len_vals[11]>             22          1          -    Covered              
+            bin <normal_range[5],len_vals[11]>             19          1          -    Covered              
+            bin <normal_range[1],len_vals[11]>             19          1          -    Covered              
+            bin <normal_range[6],len_vals[11]>             19          1          -    Covered              
+            bin <normal_range[2],len_vals[11]>             22          1          -    Covered              
+            bin <normal_range[4],len_vals[11]>             24          1          -    Covered              
+            bin <normal_range[0],len_vals[11]>             25          1          -    Covered              
+            bin <normal_range[7],len_vals[3]>              18          1          -    Covered              
+            bin <normal_range[3],len_vals[3]>              17          1          -    Covered              
+            bin <normal_range[5],len_vals[3]>              20          1          -    Covered              
+            bin <normal_range[1],len_vals[3]>              17          1          -    Covered              
+            bin <normal_range[6],len_vals[3]>              14          1          -    Covered              
+            bin <normal_range[2],len_vals[3]>              20          1          -    Covered              
+            bin <normal_range[4],len_vals[3]>              24          1          -    Covered              
+            bin <normal_range[0],len_vals[3]>              23          1          -    Covered              
+            bin <normal_range[7],len_vals[13]>             30          1          -    Covered              
+            bin <normal_range[3],len_vals[13]>             34          1          -    Covered              
+            bin <normal_range[5],len_vals[13]>             24          1          -    Covered              
+            bin <normal_range[1],len_vals[13]>             22          1          -    Covered              
+            bin <normal_range[6],len_vals[13]>             15          1          -    Covered              
+            bin <normal_range[2],len_vals[13]>             25          1          -    Covered              
+            bin <normal_range[4],len_vals[13]>             28          1          -    Covered              
+            bin <normal_range[0],len_vals[13]>             27          1          -    Covered              
+            bin <normal_range[7],len_vals[5]>              24          1          -    Covered              
+            bin <normal_range[3],len_vals[5]>              13          1          -    Covered              
+            bin <normal_range[5],len_vals[5]>              26          1          -    Covered              
+            bin <normal_range[1],len_vals[5]>              13          1          -    Covered              
+            bin <normal_range[6],len_vals[5]>              16          1          -    Covered              
+            bin <normal_range[2],len_vals[5]>              29          1          -    Covered              
+            bin <normal_range[4],len_vals[5]>              20          1          -    Covered              
+            bin <normal_range[0],len_vals[5]>              21          1          -    Covered              
+            bin <normal_range[7],len_vals[9]>              15          1          -    Covered              
+            bin <normal_range[3],len_vals[9]>              21          1          -    Covered              
+            bin <normal_range[5],len_vals[9]>              26          1          -    Covered              
+            bin <normal_range[1],len_vals[9]>              24          1          -    Covered              
+            bin <normal_range[6],len_vals[9]>              30          1          -    Covered              
+            bin <normal_range[2],len_vals[9]>              22          1          -    Covered              
+            bin <normal_range[4],len_vals[9]>              29          1          -    Covered              
+            bin <normal_range[0],len_vals[9]>              20          1          -    Covered              
+            bin <normal_range[7],len_vals[1]>              20          1          -    Covered              
+            bin <normal_range[3],len_vals[1]>              20          1          -    Covered              
+            bin <normal_range[5],len_vals[1]>              21          1          -    Covered              
+            bin <normal_range[1],len_vals[1]>              17          1          -    Covered              
+            bin <normal_range[6],len_vals[1]>              21          1          -    Covered              
+            bin <normal_range[2],len_vals[1]>              25          1          -    Covered              
+            bin <normal_range[4],len_vals[1]>              20          1          -    Covered              
+            bin <normal_range[0],len_vals[1]>              24          1          -    Covered              
+            bin <normal_range[7],len_vals[14]>             17          1          -    Covered              
+            bin <normal_range[3],len_vals[14]>             23          1          -    Covered              
+            bin <normal_range[5],len_vals[14]>             23          1          -    Covered              
+            bin <normal_range[1],len_vals[14]>             20          1          -    Covered              
+            bin <normal_range[6],len_vals[14]>             26          1          -    Covered              
+            bin <normal_range[2],len_vals[14]>             26          1          -    Covered              
+            bin <normal_range[4],len_vals[14]>             27          1          -    Covered              
+            bin <normal_range[0],len_vals[14]>             15          1          -    Covered              
+            bin <normal_range[7],len_vals[6]>              20          1          -    Covered              
+            bin <normal_range[3],len_vals[6]>              29          1          -    Covered              
+            bin <normal_range[5],len_vals[6]>              29          1          -    Covered              
+            bin <normal_range[1],len_vals[6]>              18          1          -    Covered              
+            bin <normal_range[6],len_vals[6]>              21          1          -    Covered              
+            bin <normal_range[2],len_vals[6]>              25          1          -    Covered              
+            bin <normal_range[4],len_vals[6]>              30          1          -    Covered              
+            bin <normal_range[0],len_vals[6]>              13          1          -    Covered              
+            bin <normal_range[7],len_vals[10]>             29          1          -    Covered              
+            bin <normal_range[3],len_vals[10]>             21          1          -    Covered              
+            bin <normal_range[5],len_vals[10]>             26          1          -    Covered              
+            bin <normal_range[1],len_vals[10]>             21          1          -    Covered              
+            bin <normal_range[6],len_vals[10]>             25          1          -    Covered              
+            bin <normal_range[2],len_vals[10]>             21          1          -    Covered              
+            bin <normal_range[4],len_vals[10]>             27          1          -    Covered              
+            bin <normal_range[0],len_vals[10]>             27          1          -    Covered              
+            bin <normal_range[7],len_vals[2]>              25          1          -    Covered              
+            bin <normal_range[3],len_vals[2]>              17          1          -    Covered              
+            bin <normal_range[5],len_vals[2]>              21          1          -    Covered              
+            bin <normal_range[1],len_vals[2]>              27          1          -    Covered              
+            bin <normal_range[6],len_vals[2]>              19          1          -    Covered              
+            bin <normal_range[2],len_vals[2]>              27          1          -    Covered              
+            bin <normal_range[4],len_vals[2]>              18          1          -    Covered              
+            bin <normal_range[0],len_vals[2]>              21          1          -    Covered              
+            bin <normal_range[7],len_vals[12]>             21          1          -    Covered              
+            bin <normal_range[3],len_vals[12]>             27          1          -    Covered              
+            bin <normal_range[5],len_vals[12]>             24          1          -    Covered              
+            bin <normal_range[1],len_vals[12]>             30          1          -    Covered              
+            bin <normal_range[6],len_vals[12]>             13          1          -    Covered              
+            bin <normal_range[2],len_vals[12]>             18          1          -    Covered              
+            bin <normal_range[4],len_vals[12]>             19          1          -    Covered              
+            bin <normal_range[0],len_vals[12]>             37          1          -    Covered              
+            bin <normal_range[7],len_vals[4]>              27          1          -    Covered              
+            bin <normal_range[3],len_vals[4]>              25          1          -    Covered              
+            bin <normal_range[5],len_vals[4]>              28          1          -    Covered              
+            bin <normal_range[1],len_vals[4]>              16          1          -    Covered              
+            bin <normal_range[6],len_vals[4]>              25          1          -    Covered              
+            bin <normal_range[2],len_vals[4]>              24          1          -    Covered              
+            bin <normal_range[4],len_vals[4]>              25          1          -    Covered              
+            bin <normal_range[0],len_vals[4]>              22          1          -    Covered              
+            bin <normal_range[7],len_vals[8]>              19          1          -    Covered              
+            bin <normal_range[3],len_vals[8]>              22          1          -    Covered              
+            bin <normal_range[5],len_vals[8]>              19          1          -    Covered              
+            bin <normal_range[1],len_vals[8]>              20          1          -    Covered              
+            bin <normal_range[6],len_vals[8]>              20          1          -    Covered              
+            bin <normal_range[2],len_vals[8]>              16          1          -    Covered              
+            bin <normal_range[4],len_vals[8]>              19          1          -    Covered              
+            bin <normal_range[0],len_vals[8]>              22          1          -    Covered              
+            bin <normal_range[7],len_vals[0]>              16          1          -    Covered              
+            bin <normal_range[3],len_vals[0]>              22          1          -    Covered              
+            bin <normal_range[5],len_vals[0]>              24          1          -    Covered              
+            bin <normal_range[1],len_vals[0]>              20          1          -    Covered              
+            bin <normal_range[6],len_vals[0]>              17          1          -    Covered              
+            bin <normal_range[2],len_vals[0]>              19          1          -    Covered              
+            bin <normal_range[4],len_vals[0]>              25          1          -    Covered              
+            bin <normal_range[0],len_vals[0]>              30          1          -    Covered              
+            bin <lower_bound,len_vals[15]>                  1          1          -    Covered              
+            bin <lower_bound,len_vals[7]>                   1          1          -    Covered              
+            bin <lower_bound,len_vals[11]>                  1          1          -    Covered              
+            bin <lower_bound,len_vals[3]>                   1          1          -    Covered              
+            bin <lower_bound,len_vals[13]>                  1          1          -    Covered              
+            bin <lower_bound,len_vals[5]>                   2          1          -    Covered              
+            bin <lower_bound,len_vals[9]>                   2          1          -    Covered              
+            bin <lower_bound,len_vals[1]>                   1          1          -    Covered              
+            bin <lower_bound,len_vals[14]>                  1          1          -    Covered              
+            bin <lower_bound,len_vals[6]>                   2          1          -    Covered              
+            bin <lower_bound,len_vals[10]>                  1          1          -    Covered              
+            bin <lower_bound,len_vals[2]>                   1          1          -    Covered              
+            bin <lower_bound,len_vals[12]>                  1          1          -    Covered              
+            bin <lower_bound,len_vals[4]>                   2          1          -    Covered              
+            bin <lower_bound,len_vals[8]>                   1          1          -    Covered              
+            bin <lower_bound,len_vals[0]>                   2          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin ignore_4kb_cross                   179                     -    Occurred             
+            ignore_bin ignore_out                           1                     -    Occurred             
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /AXI_coverage_pkg/AXI_coverage/cg_axi_protocol 
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                   582        582          -                      
+    missing/total bins:                                     0        582          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_awaddr                              100.00%        100          -    Covered              
+        covered/total bins:                                19         19          -                      
+        missing/total bins:                                 0         19          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_araddr                              100.00%        100          -    Covered              
+        covered/total bins:                                19         19          -                      
+        missing/total bins:                                 0         19          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_awlen                               100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_arlen                               100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_write_boundary                      100.00%        100          -    Covered              
+        covered/total bins:                                18         18          -                      
+        missing/total bins:                                 0         18          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_read_boundary                       100.00%        100          -    Covered              
+        covered/total bins:                                18         18          -                      
+        missing/total bins:                                 0         18          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_bresp_trans                         100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_rresp_trans                         100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross cross_awaddr_awlen                          100.00%        100          -    Covered              
+        covered/total bins:                               232        232          -                      
+        missing/total bins:                                 0        232          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross cross_araddr_arlen                          100.00%        100          -    Covered              
+        covered/total bins:                               232        232          -                      
+        missing/total bins:                                 0        232          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance AXI_Protocol_Coverage            100.00%        100          -    Covered              
+    covered/total bins:                                   582        582          -                      
+    missing/total bins:                                     0        582          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_awaddr                              100.00%        100          -    Covered              
+        covered/total bins:                                19         19          -                      
+        missing/total bins:                                 0         19          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin lower_bound                                    21          1          -    Covered              
+        bin upper_bound                                     2          1          -    Covered              
+        bin normal_range[0]                               342          1          -    Covered              
+        bin normal_range[1]                               358          1          -    Covered              
+        bin normal_range[2]                               367          1          -    Covered              
+        bin normal_range[3]                               352          1          -    Covered              
+        bin normal_range[4]                               349          1          -    Covered              
+        bin normal_range[5]                               342          1          -    Covered              
+        bin normal_range[6]                               357          1          -    Covered              
+        bin normal_range[7]                               343          1          -    Covered              
+        bin normal_range[8]                               351          1          -    Covered              
+        bin normal_range[9]                               355          1          -    Covered              
+        bin normal_range[10]                              358          1          -    Covered              
+        bin normal_range[11]                              385          1          -    Covered              
+        bin normal_range[12]                              321          1          -    Covered              
+        bin normal_range[13]                              227          1          -    Covered              
+        bin normal_range[14]                              152          1          -    Covered              
+        bin normal_range[15]                               50          1          -    Covered              
+        bin out_of_range                                    1          1          -    Covered              
+    Coverpoint cp_araddr                              100.00%        100          -    Covered              
+        covered/total bins:                                19         19          -                      
+        missing/total bins:                                 0         19          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin lower_bound                                    21          1          -    Covered              
+        bin upper_bound                                     2          1          -    Covered              
+        bin normal_range[0]                               368          1          -    Covered              
+        bin normal_range[1]                               335          1          -    Covered              
+        bin normal_range[2]                               372          1          -    Covered              
+        bin normal_range[3]                               346          1          -    Covered              
+        bin normal_range[4]                               378          1          -    Covered              
+        bin normal_range[5]                               371          1          -    Covered              
+        bin normal_range[6]                               335          1          -    Covered              
+        bin normal_range[7]                               345          1          -    Covered              
+        bin normal_range[8]                               335          1          -    Covered              
+        bin normal_range[9]                               380          1          -    Covered              
+        bin normal_range[10]                              372          1          -    Covered              
+        bin normal_range[11]                              329          1          -    Covered              
+        bin normal_range[12]                              298          1          -    Covered              
+        bin normal_range[13]                              233          1          -    Covered              
+        bin normal_range[14]                              129          1          -    Covered              
+        bin normal_range[15]                               45          1          -    Covered              
+        bin out_of_range                                    1          1          -    Covered              
+    Coverpoint cp_awlen                               100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin len_vals[0]                                   353          1          -    Covered              
+        bin len_vals[1]                                   328          1          -    Covered              
+        bin len_vals[2]                                   367          1          -    Covered              
+        bin len_vals[3]                                   344          1          -    Covered              
+        bin len_vals[4]                                   300          1          -    Covered              
+        bin len_vals[5]                                   323          1          -    Covered              
+        bin len_vals[6]                                   327          1          -    Covered              
+        bin len_vals[7]                                   279          1          -    Covered              
+        bin len_vals[8]                                   328          1          -    Covered              
+        bin len_vals[9]                                   309          1          -    Covered              
+        bin len_vals[10]                                  303          1          -    Covered              
+        bin len_vals[11]                                  330          1          -    Covered              
+        bin len_vals[12]                                  291          1          -    Covered              
+        bin len_vals[13]                                  300          1          -    Covered              
+        bin len_vals[14]                                  282          1          -    Covered              
+        bin len_vals[15]                                  269          1          -    Covered              
+    Coverpoint cp_arlen                               100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin len_vals[0]                                   364          1          -    Covered              
+        bin len_vals[1]                                   355          1          -    Covered              
+        bin len_vals[2]                                   366          1          -    Covered              
+        bin len_vals[3]                                   324          1          -    Covered              
+        bin len_vals[4]                                   360          1          -    Covered              
+        bin len_vals[5]                                   295          1          -    Covered              
+        bin len_vals[6]                                   314          1          -    Covered              
+        bin len_vals[7]                                   309          1          -    Covered              
+        bin len_vals[8]                                   303          1          -    Covered              
+        bin len_vals[9]                                   312          1          -    Covered              
+        bin len_vals[10]                                  304          1          -    Covered              
+        bin len_vals[11]                                  287          1          -    Covered              
+        bin len_vals[12]                                  281          1          -    Covered              
+        bin len_vals[13]                                  289          1          -    Covered              
+        bin len_vals[14]                                  273          1          -    Covered              
+        bin len_vals[15]                                  259          1          -    Covered              
+    Coverpoint cp_write_boundary                      100.00%        100          -    Covered              
+        covered/total bins:                                18         18          -                      
+        missing/total bins:                                 0         18          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin safe_transfer[0]                               46          1          -    Covered              
+        bin safe_transfer[1]                              123          1          -    Covered              
+        bin safe_transfer[2]                              225          1          -    Covered              
+        bin safe_transfer[3]                              302          1          -    Covered              
+        bin safe_transfer[4]                              342          1          -    Covered              
+        bin safe_transfer[5]                              339          1          -    Covered              
+        bin safe_transfer[6]                              356          1          -    Covered              
+        bin safe_transfer[7]                              368          1          -    Covered              
+        bin safe_transfer[8]                              357          1          -    Covered              
+        bin safe_transfer[9]                              394          1          -    Covered              
+        bin safe_transfer[10]                             353          1          -    Covered              
+        bin safe_transfer[11]                             334          1          -    Covered              
+        bin safe_transfer[12]                             343          1          -    Covered              
+        bin safe_transfer[13]                             376          1          -    Covered              
+        bin safe_transfer[14]                             389          1          -    Covered              
+        bin safe_transfer[15]                             374          1          -    Covered              
+        bin perfect_4kb                                    10          1          -    Covered              
+        bin illegal_cross                                   2          1          -    Covered              
+    Coverpoint cp_read_boundary                       100.00%        100          -    Covered              
+        covered/total bins:                                18         18          -                      
+        missing/total bins:                                 0         18          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin safe_transfer[0]                               52          1          -    Covered              
+        bin safe_transfer[1]                              133          1          -    Covered              
+        bin safe_transfer[2]                              211          1          -    Covered              
+        bin safe_transfer[3]                              312          1          -    Covered              
+        bin safe_transfer[4]                              340          1          -    Covered              
+        bin safe_transfer[5]                              364          1          -    Covered              
+        bin safe_transfer[6]                              386          1          -    Covered              
+        bin safe_transfer[7]                              356          1          -    Covered              
+        bin safe_transfer[8]                              373          1          -    Covered              
+        bin safe_transfer[9]                              329          1          -    Covered              
+        bin safe_transfer[10]                             406          1          -    Covered              
+        bin safe_transfer[11]                             370          1          -    Covered              
+        bin safe_transfer[12]                             327          1          -    Covered              
+        bin safe_transfer[13]                             358          1          -    Covered              
+        bin safe_transfer[14]                             322          1          -    Covered              
+        bin safe_transfer[15]                             348          1          -    Covered              
+        bin perfect_4kb                                     6          1          -    Covered              
+        bin illegal_cross                                   2          1          -    Covered              
+    Coverpoint cp_bresp_trans                         100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin okay                                         4300          1          -    Covered              
+        bin slverr                                        733          1          -    Covered              
+        bin okay_okay                                    3681          1          -    Covered              
+        bin okay_slverr                                   618          1          -    Covered              
+        bin slverr_okay                                   618          1          -    Covered              
+        bin slverr_slverr                                 115          1          -    Covered              
+    Coverpoint cp_rresp_trans                         100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin okay                                         4331          1          -    Covered              
+        bin slverr                                        664          1          -    Covered              
+        bin okay_okay                                    3760          1          -    Covered              
+        bin okay_slverr                                   570          1          -    Covered              
+        bin slverr_okay                                   570          1          -    Covered              
+        bin slverr_slverr                                  94          1          -    Covered              
+    Cross cross_awaddr_awlen                          100.00%        100          -    Covered              
+        covered/total bins:                               232        232          -                      
+        missing/total bins:                                 0        232          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <normal_range[14],len_vals[3]>             18          1          -    Covered              
+            bin <normal_range[14],len_vals[1]>             29          1          -    Covered              
+            bin <normal_range[14],len_vals[2]>             27          1          -    Covered              
+            bin <normal_range[14],len_vals[0]>             27          1          -    Covered              
+            bin <normal_range[13],len_vals[7]>             21          1          -    Covered              
+            bin <normal_range[13],len_vals[3]>             27          1          -    Covered              
+            bin <normal_range[13],len_vals[5]>             20          1          -    Covered              
+            bin <normal_range[13],len_vals[1]>             22          1          -    Covered              
+            bin <normal_range[13],len_vals[6]>             23          1          -    Covered              
+            bin <normal_range[13],len_vals[2]>             22          1          -    Covered              
+            bin <normal_range[13],len_vals[4]>             18          1          -    Covered              
+            bin <normal_range[13],len_vals[0]>             29          1          -    Covered              
+            bin <normal_range[12],len_vals[11]>            17          1          -    Covered              
+            bin <normal_range[12],len_vals[9]>             21          1          -    Covered              
+            bin <normal_range[12],len_vals[10]>            21          1          -    Covered              
+            bin <normal_range[12],len_vals[8]>             21          1          -    Covered              
+            bin <normal_range[12],len_vals[7]>             21          1          -    Covered              
+            bin <normal_range[12],len_vals[3]>             22          1          -    Covered              
+            bin <normal_range[12],len_vals[5]>             24          1          -    Covered              
+            bin <normal_range[12],len_vals[1]>             25          1          -    Covered              
+            bin <normal_range[12],len_vals[6]>             27          1          -    Covered              
+            bin <normal_range[12],len_vals[2]>             20          1          -    Covered              
+            bin <normal_range[12],len_vals[4]>             21          1          -    Covered              
+            bin <normal_range[12],len_vals[0]>             21          1          -    Covered              
+            bin <normal_range[11],len_vals[15]>            26          1          -    Covered              
+            bin <normal_range[9],len_vals[15]>             17          1          -    Covered              
+            bin <normal_range[10],len_vals[15]>            24          1          -    Covered              
+            bin <normal_range[8],len_vals[15]>             24          1          -    Covered              
+            bin <normal_range[11],len_vals[7]>             23          1          -    Covered              
+            bin <normal_range[9],len_vals[7]>              16          1          -    Covered              
+            bin <normal_range[10],len_vals[7]>             19          1          -    Covered              
+            bin <normal_range[8],len_vals[7]>              21          1          -    Covered              
+            bin <normal_range[11],len_vals[11]>            28          1          -    Covered              
+            bin <normal_range[9],len_vals[11]>             29          1          -    Covered              
+            bin <normal_range[10],len_vals[11]>            30          1          -    Covered              
+            bin <normal_range[8],len_vals[11]>             24          1          -    Covered              
+            bin <normal_range[11],len_vals[3]>             29          1          -    Covered              
+            bin <normal_range[9],len_vals[3]>              30          1          -    Covered              
+            bin <normal_range[10],len_vals[3]>             25          1          -    Covered              
+            bin <normal_range[8],len_vals[3]>              23          1          -    Covered              
+            bin <normal_range[11],len_vals[13]>            22          1          -    Covered              
+            bin <normal_range[9],len_vals[13]>             19          1          -    Covered              
+            bin <normal_range[10],len_vals[13]>            22          1          -    Covered              
+            bin <normal_range[8],len_vals[13]>             18          1          -    Covered              
+            bin <normal_range[11],len_vals[5]>             26          1          -    Covered              
+            bin <normal_range[9],len_vals[5]>              26          1          -    Covered              
+            bin <normal_range[10],len_vals[5]>             25          1          -    Covered              
+            bin <normal_range[8],len_vals[5]>              17          1          -    Covered              
+            bin <normal_range[11],len_vals[9]>             19          1          -    Covered              
+            bin <normal_range[9],len_vals[9]>              23          1          -    Covered              
+            bin <normal_range[10],len_vals[9]>             22          1          -    Covered              
+            bin <normal_range[8],len_vals[9]>              25          1          -    Covered              
+            bin <normal_range[11],len_vals[1]>             23          1          -    Covered              
+            bin <normal_range[9],len_vals[1]>              21          1          -    Covered              
+            bin <normal_range[10],len_vals[1]>             16          1          -    Covered              
+            bin <normal_range[8],len_vals[1]>              20          1          -    Covered              
+            bin <normal_range[11],len_vals[14]>            20          1          -    Covered              
+            bin <normal_range[9],len_vals[14]>             25          1          -    Covered              
+            bin <normal_range[10],len_vals[14]>            22          1          -    Covered              
+            bin <normal_range[8],len_vals[14]>             16          1          -    Covered              
+            bin <normal_range[11],len_vals[6]>             19          1          -    Covered              
+            bin <normal_range[9],len_vals[6]>              25          1          -    Covered              
+            bin <normal_range[10],len_vals[6]>             23          1          -    Covered              
+            bin <normal_range[8],len_vals[6]>              21          1          -    Covered              
+            bin <normal_range[11],len_vals[10]>            27          1          -    Covered              
+            bin <normal_range[9],len_vals[10]>             14          1          -    Covered              
+            bin <normal_range[10],len_vals[10]>            22          1          -    Covered              
+            bin <normal_range[8],len_vals[10]>             28          1          -    Covered              
+            bin <normal_range[11],len_vals[2]>             24          1          -    Covered              
+            bin <normal_range[9],len_vals[2]>              23          1          -    Covered              
+            bin <normal_range[10],len_vals[2]>             21          1          -    Covered              
+            bin <normal_range[8],len_vals[2]>              32          1          -    Covered              
+            bin <normal_range[11],len_vals[12]>            24          1          -    Covered              
+            bin <normal_range[9],len_vals[12]>             25          1          -    Covered              
+            bin <normal_range[10],len_vals[12]>            29          1          -    Covered              
+            bin <normal_range[8],len_vals[12]>             15          1          -    Covered              
+            bin <normal_range[11],len_vals[4]>             18          1          -    Covered              
+            bin <normal_range[9],len_vals[4]>              17          1          -    Covered              
+            bin <normal_range[10],len_vals[4]>             15          1          -    Covered              
+            bin <normal_range[8],len_vals[4]>              24          1          -    Covered              
+            bin <normal_range[11],len_vals[8]>             28          1          -    Covered              
+            bin <normal_range[9],len_vals[8]>              20          1          -    Covered              
+            bin <normal_range[10],len_vals[8]>             23          1          -    Covered              
+            bin <normal_range[8],len_vals[8]>              19          1          -    Covered              
+            bin <normal_range[11],len_vals[0]>             29          1          -    Covered              
+            bin <normal_range[9],len_vals[0]>              25          1          -    Covered              
+            bin <normal_range[10],len_vals[0]>             20          1          -    Covered              
+            bin <normal_range[8],len_vals[0]>              24          1          -    Covered              
+            bin <normal_range[7],len_vals[15]>             18          1          -    Covered              
+            bin <normal_range[3],len_vals[15]>             17          1          -    Covered              
+            bin <normal_range[5],len_vals[15]>             24          1          -    Covered              
+            bin <normal_range[1],len_vals[15]>             19          1          -    Covered              
+            bin <normal_range[6],len_vals[15]>             24          1          -    Covered              
+            bin <normal_range[2],len_vals[15]>             28          1          -    Covered              
+            bin <normal_range[4],len_vals[15]>             20          1          -    Covered              
+            bin <normal_range[0],len_vals[15]>             22          1          -    Covered              
+            bin <normal_range[7],len_vals[7]>              16          1          -    Covered              
+            bin <normal_range[3],len_vals[7]>              19          1          -    Covered              
+            bin <normal_range[5],len_vals[7]>              18          1          -    Covered              
+            bin <normal_range[1],len_vals[7]>              20          1          -    Covered              
+            bin <normal_range[6],len_vals[7]>              22          1          -    Covered              
+            bin <normal_range[2],len_vals[7]>              23          1          -    Covered              
+            bin <normal_range[4],len_vals[7]>              17          1          -    Covered              
+            bin <normal_range[0],len_vals[7]>              16          1          -    Covered              
+            bin <normal_range[7],len_vals[11]>             20          1          -    Covered              
+            bin <normal_range[3],len_vals[11]>             25          1          -    Covered              
+            bin <normal_range[5],len_vals[11]>             23          1          -    Covered              
+            bin <normal_range[1],len_vals[11]>             25          1          -    Covered              
+            bin <normal_range[6],len_vals[11]>             33          1          -    Covered              
+            bin <normal_range[2],len_vals[11]>             16          1          -    Covered              
+            bin <normal_range[4],len_vals[11]>             28          1          -    Covered              
+            bin <normal_range[0],len_vals[11]>             26          1          -    Covered              
+            bin <normal_range[7],len_vals[3]>              16          1          -    Covered              
+            bin <normal_range[3],len_vals[3]>              27          1          -    Covered              
+            bin <normal_range[5],len_vals[3]>              13          1          -    Covered              
+            bin <normal_range[1],len_vals[3]>              25          1          -    Covered              
+            bin <normal_range[6],len_vals[3]>              22          1          -    Covered              
+            bin <normal_range[2],len_vals[3]>              24          1          -    Covered              
+            bin <normal_range[4],len_vals[3]>              20          1          -    Covered              
+            bin <normal_range[0],len_vals[3]>              20          1          -    Covered              
+            bin <normal_range[7],len_vals[13]>             23          1          -    Covered              
+            bin <normal_range[3],len_vals[13]>             29          1          -    Covered              
+            bin <normal_range[5],len_vals[13]>             23          1          -    Covered              
+            bin <normal_range[1],len_vals[13]>             18          1          -    Covered              
+            bin <normal_range[6],len_vals[13]>             30          1          -    Covered              
+            bin <normal_range[2],len_vals[13]>             29          1          -    Covered              
+            bin <normal_range[4],len_vals[13]>             20          1          -    Covered              
+            bin <normal_range[0],len_vals[13]>             19          1          -    Covered              
+            bin <normal_range[7],len_vals[5]>              24          1          -    Covered              
+            bin <normal_range[3],len_vals[5]>              12          1          -    Covered              
+            bin <normal_range[5],len_vals[5]>              19          1          -    Covered              
+            bin <normal_range[1],len_vals[5]>              28          1          -    Covered              
+            bin <normal_range[6],len_vals[5]>              15          1          -    Covered              
+            bin <normal_range[2],len_vals[5]>              28          1          -    Covered              
+            bin <normal_range[4],len_vals[5]>              31          1          -    Covered              
+            bin <normal_range[0],len_vals[5]>              17          1          -    Covered              
+            bin <normal_range[7],len_vals[9]>              17          1          -    Covered              
+            bin <normal_range[3],len_vals[9]>              27          1          -    Covered              
+            bin <normal_range[5],len_vals[9]>              29          1          -    Covered              
+            bin <normal_range[1],len_vals[9]>              22          1          -    Covered              
+            bin <normal_range[6],len_vals[9]>              22          1          -    Covered              
+            bin <normal_range[2],len_vals[9]>              22          1          -    Covered              
+            bin <normal_range[4],len_vals[9]>              25          1          -    Covered              
+            bin <normal_range[0],len_vals[9]>              23          1          -    Covered              
+            bin <normal_range[7],len_vals[1]>              28          1          -    Covered              
+            bin <normal_range[3],len_vals[1]>              23          1          -    Covered              
+            bin <normal_range[5],len_vals[1]>              13          1          -    Covered              
+            bin <normal_range[1],len_vals[1]>              18          1          -    Covered              
+            bin <normal_range[6],len_vals[1]>              23          1          -    Covered              
+            bin <normal_range[2],len_vals[1]>              15          1          -    Covered              
+            bin <normal_range[4],len_vals[1]>              18          1          -    Covered              
+            bin <normal_range[0],len_vals[1]>              22          1          -    Covered              
+            bin <normal_range[7],len_vals[14]>             11          1          -    Covered              
+            bin <normal_range[3],len_vals[14]>             33          1          -    Covered              
+            bin <normal_range[5],len_vals[14]>             16          1          -    Covered              
+            bin <normal_range[1],len_vals[14]>             28          1          -    Covered              
+            bin <normal_range[6],len_vals[14]>             25          1          -    Covered              
+            bin <normal_range[2],len_vals[14]>             24          1          -    Covered              
+            bin <normal_range[4],len_vals[14]>             25          1          -    Covered              
+            bin <normal_range[0],len_vals[14]>             26          1          -    Covered              
+            bin <normal_range[7],len_vals[6]>              30          1          -    Covered              
+            bin <normal_range[3],len_vals[6]>              19          1          -    Covered              
+            bin <normal_range[5],len_vals[6]>              25          1          -    Covered              
+            bin <normal_range[1],len_vals[6]>              20          1          -    Covered              
+            bin <normal_range[6],len_vals[6]>              15          1          -    Covered              
+            bin <normal_range[2],len_vals[6]>              22          1          -    Covered              
+            bin <normal_range[4],len_vals[6]>              21          1          -    Covered              
+            bin <normal_range[0],len_vals[6]>              28          1          -    Covered              
+            bin <normal_range[7],len_vals[10]>             21          1          -    Covered              
+            bin <normal_range[3],len_vals[10]>             21          1          -    Covered              
+            bin <normal_range[5],len_vals[10]>             23          1          -    Covered              
+            bin <normal_range[1],len_vals[10]>             26          1          -    Covered              
+            bin <normal_range[6],len_vals[10]>             28          1          -    Covered              
+            bin <normal_range[2],len_vals[10]>             29          1          -    Covered              
+            bin <normal_range[4],len_vals[10]>             21          1          -    Covered              
+            bin <normal_range[0],len_vals[10]>             17          1          -    Covered              
+            bin <normal_range[7],len_vals[2]>              36          1          -    Covered              
+            bin <normal_range[3],len_vals[2]>              17          1          -    Covered              
+            bin <normal_range[5],len_vals[2]>              32          1          -    Covered              
+            bin <normal_range[1],len_vals[2]>              24          1          -    Covered              
+            bin <normal_range[6],len_vals[2]>              14          1          -    Covered              
+            bin <normal_range[2],len_vals[2]>              24          1          -    Covered              
+            bin <normal_range[4],len_vals[2]>              19          1          -    Covered              
+            bin <normal_range[0],len_vals[2]>              18          1          -    Covered              
+            bin <normal_range[7],len_vals[12]>             18          1          -    Covered              
+            bin <normal_range[3],len_vals[12]>             24          1          -    Covered              
+            bin <normal_range[5],len_vals[12]>             20          1          -    Covered              
+            bin <normal_range[1],len_vals[12]>             20          1          -    Covered              
+            bin <normal_range[6],len_vals[12]>             26          1          -    Covered              
+            bin <normal_range[2],len_vals[12]>             22          1          -    Covered              
+            bin <normal_range[4],len_vals[12]>             20          1          -    Covered              
+            bin <normal_range[0],len_vals[12]>             28          1          -    Covered              
+            bin <normal_range[7],len_vals[4]>              21          1          -    Covered              
+            bin <normal_range[3],len_vals[4]>              21          1          -    Covered              
+            bin <normal_range[5],len_vals[4]>              14          1          -    Covered              
+            bin <normal_range[1],len_vals[4]>              21          1          -    Covered              
+            bin <normal_range[6],len_vals[4]>              19          1          -    Covered              
+            bin <normal_range[2],len_vals[4]>              19          1          -    Covered              
+            bin <normal_range[4],len_vals[4]>              25          1          -    Covered              
+            bin <normal_range[0],len_vals[4]>              19          1          -    Covered              
+            bin <normal_range[7],len_vals[8]>              26          1          -    Covered              
+            bin <normal_range[3],len_vals[8]>              23          1          -    Covered              
+            bin <normal_range[5],len_vals[8]>              33          1          -    Covered              
+            bin <normal_range[1],len_vals[8]>              23          1          -    Covered              
+            bin <normal_range[6],len_vals[8]>              18          1          -    Covered              
+            bin <normal_range[2],len_vals[8]>              22          1          -    Covered              
+            bin <normal_range[4],len_vals[8]>              25          1          -    Covered              
+            bin <normal_range[0],len_vals[8]>              21          1          -    Covered              
+            bin <normal_range[7],len_vals[0]>              18          1          -    Covered              
+            bin <normal_range[3],len_vals[0]>              15          1          -    Covered              
+            bin <normal_range[5],len_vals[0]>              17          1          -    Covered              
+            bin <normal_range[1],len_vals[0]>              21          1          -    Covered              
+            bin <normal_range[6],len_vals[0]>              21          1          -    Covered              
+            bin <normal_range[2],len_vals[0]>              20          1          -    Covered              
+            bin <normal_range[4],len_vals[0]>              14          1          -    Covered              
+            bin <normal_range[0],len_vals[0]>              20          1          -    Covered              
+            bin <lower_bound,len_vals[15]>                  2          1          -    Covered              
+            bin <lower_bound,len_vals[7]>                   1          1          -    Covered              
+            bin <lower_bound,len_vals[11]>                  1          1          -    Covered              
+            bin <lower_bound,len_vals[3]>                   2          1          -    Covered              
+            bin <lower_bound,len_vals[13]>                  1          1          -    Covered              
+            bin <lower_bound,len_vals[5]>                   1          1          -    Covered              
+            bin <lower_bound,len_vals[9]>                   1          1          -    Covered              
+            bin <lower_bound,len_vals[1]>                   1          1          -    Covered              
+            bin <lower_bound,len_vals[14]>                  1          1          -    Covered              
+            bin <lower_bound,len_vals[6]>                   1          1          -    Covered              
+            bin <lower_bound,len_vals[10]>                  1          1          -    Covered              
+            bin <lower_bound,len_vals[2]>                   3          1          -    Covered              
+            bin <lower_bound,len_vals[12]>                  1          1          -    Covered              
+            bin <lower_bound,len_vals[4]>                   1          1          -    Covered              
+            bin <lower_bound,len_vals[8]>                   1          1          -    Covered              
+            bin <lower_bound,len_vals[0]>                   2          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin ignore_4kb_cross                   209                     -    Occurred             
+            ignore_bin ignore_out                           1                     -    Occurred             
+    Cross cross_araddr_arlen                          100.00%        100          -    Covered              
+        covered/total bins:                               232        232          -                      
+        missing/total bins:                                 0        232          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <normal_range[14],len_vals[3]>             27          1          -    Covered              
+            bin <normal_range[14],len_vals[1]>             18          1          -    Covered              
+            bin <normal_range[14],len_vals[2]>             24          1          -    Covered              
+            bin <normal_range[14],len_vals[0]>             19          1          -    Covered              
+            bin <normal_range[13],len_vals[7]>             19          1          -    Covered              
+            bin <normal_range[13],len_vals[3]>             25          1          -    Covered              
+            bin <normal_range[13],len_vals[5]>             19          1          -    Covered              
+            bin <normal_range[13],len_vals[1]>             29          1          -    Covered              
+            bin <normal_range[13],len_vals[6]>             20          1          -    Covered              
+            bin <normal_range[13],len_vals[2]>             24          1          -    Covered              
+            bin <normal_range[13],len_vals[4]>             18          1          -    Covered              
+            bin <normal_range[13],len_vals[0]>             30          1          -    Covered              
+            bin <normal_range[12],len_vals[11]>            19          1          -    Covered              
+            bin <normal_range[12],len_vals[9]>             18          1          -    Covered              
+            bin <normal_range[12],len_vals[10]>            26          1          -    Covered              
+            bin <normal_range[12],len_vals[8]>             29          1          -    Covered              
+            bin <normal_range[12],len_vals[7]>             14          1          -    Covered              
+            bin <normal_range[12],len_vals[3]>             18          1          -    Covered              
+            bin <normal_range[12],len_vals[5]>             16          1          -    Covered              
+            bin <normal_range[12],len_vals[1]>             28          1          -    Covered              
+            bin <normal_range[12],len_vals[6]>             19          1          -    Covered              
+            bin <normal_range[12],len_vals[2]>             24          1          -    Covered              
+            bin <normal_range[12],len_vals[4]>             18          1          -    Covered              
+            bin <normal_range[12],len_vals[0]>             28          1          -    Covered              
+            bin <normal_range[11],len_vals[15]>            13          1          -    Covered              
+            bin <normal_range[9],len_vals[15]>             23          1          -    Covered              
+            bin <normal_range[10],len_vals[15]>            21          1          -    Covered              
+            bin <normal_range[8],len_vals[15]>             24          1          -    Covered              
+            bin <normal_range[11],len_vals[7]>             23          1          -    Covered              
+            bin <normal_range[9],len_vals[7]>              19          1          -    Covered              
+            bin <normal_range[10],len_vals[7]>             22          1          -    Covered              
+            bin <normal_range[8],len_vals[7]>              23          1          -    Covered              
+            bin <normal_range[11],len_vals[11]>            19          1          -    Covered              
+            bin <normal_range[9],len_vals[11]>             22          1          -    Covered              
+            bin <normal_range[10],len_vals[11]>            22          1          -    Covered              
+            bin <normal_range[8],len_vals[11]>             23          1          -    Covered              
+            bin <normal_range[11],len_vals[3]>             18          1          -    Covered              
+            bin <normal_range[9],len_vals[3]>              35          1          -    Covered              
+            bin <normal_range[10],len_vals[3]>             25          1          -    Covered              
+            bin <normal_range[8],len_vals[3]>              17          1          -    Covered              
+            bin <normal_range[11],len_vals[13]>            18          1          -    Covered              
+            bin <normal_range[9],len_vals[13]>             21          1          -    Covered              
+            bin <normal_range[10],len_vals[13]>            20          1          -    Covered              
+            bin <normal_range[8],len_vals[13]>             15          1          -    Covered              
+            bin <normal_range[11],len_vals[5]>             21          1          -    Covered              
+            bin <normal_range[9],len_vals[5]>              29          1          -    Covered              
+            bin <normal_range[10],len_vals[5]>             20          1          -    Covered              
+            bin <normal_range[8],len_vals[5]>              15          1          -    Covered              
+            bin <normal_range[11],len_vals[9]>             21          1          -    Covered              
+            bin <normal_range[9],len_vals[9]>              22          1          -    Covered              
+            bin <normal_range[10],len_vals[9]>             24          1          -    Covered              
+            bin <normal_range[8],len_vals[9]>              22          1          -    Covered              
+            bin <normal_range[11],len_vals[1]>             27          1          -    Covered              
+            bin <normal_range[9],len_vals[1]>              15          1          -    Covered              
+            bin <normal_range[10],len_vals[1]>             33          1          -    Covered              
+            bin <normal_range[8],len_vals[1]>              24          1          -    Covered              
+            bin <normal_range[11],len_vals[14]>            17          1          -    Covered              
+            bin <normal_range[9],len_vals[14]>             18          1          -    Covered              
+            bin <normal_range[10],len_vals[14]>            29          1          -    Covered              
+            bin <normal_range[8],len_vals[14]>             23          1          -    Covered              
+            bin <normal_range[11],len_vals[6]>             19          1          -    Covered              
+            bin <normal_range[9],len_vals[6]>              21          1          -    Covered              
+            bin <normal_range[10],len_vals[6]>             15          1          -    Covered              
+            bin <normal_range[8],len_vals[6]>              26          1          -    Covered              
+            bin <normal_range[11],len_vals[10]>            20          1          -    Covered              
+            bin <normal_range[9],len_vals[10]>             20          1          -    Covered              
+            bin <normal_range[10],len_vals[10]>            19          1          -    Covered              
+            bin <normal_range[8],len_vals[10]>             14          1          -    Covered              
+            bin <normal_range[11],len_vals[2]>             26          1          -    Covered              
+            bin <normal_range[9],len_vals[2]>              32          1          -    Covered              
+            bin <normal_range[10],len_vals[2]>             27          1          -    Covered              
+            bin <normal_range[8],len_vals[2]>              20          1          -    Covered              
+            bin <normal_range[11],len_vals[12]>            19          1          -    Covered              
+            bin <normal_range[9],len_vals[12]>             12          1          -    Covered              
+            bin <normal_range[10],len_vals[12]>            20          1          -    Covered              
+            bin <normal_range[8],len_vals[12]>             23          1          -    Covered              
+            bin <normal_range[11],len_vals[4]>             19          1          -    Covered              
+            bin <normal_range[9],len_vals[4]>              47          1          -    Covered              
+            bin <normal_range[10],len_vals[4]>             22          1          -    Covered              
+            bin <normal_range[8],len_vals[4]>              21          1          -    Covered              
+            bin <normal_range[11],len_vals[8]>             29          1          -    Covered              
+            bin <normal_range[9],len_vals[8]>              21          1          -    Covered              
+            bin <normal_range[10],len_vals[8]>             25          1          -    Covered              
+            bin <normal_range[8],len_vals[8]>              22          1          -    Covered              
+            bin <normal_range[11],len_vals[0]>             20          1          -    Covered              
+            bin <normal_range[9],len_vals[0]>              23          1          -    Covered              
+            bin <normal_range[10],len_vals[0]>             28          1          -    Covered              
+            bin <normal_range[8],len_vals[0]>              23          1          -    Covered              
+            bin <normal_range[7],len_vals[15]>             16          1          -    Covered              
+            bin <normal_range[3],len_vals[15]>             18          1          -    Covered              
+            bin <normal_range[5],len_vals[15]>             20          1          -    Covered              
+            bin <normal_range[1],len_vals[15]>             32          1          -    Covered              
+            bin <normal_range[6],len_vals[15]>             20          1          -    Covered              
+            bin <normal_range[2],len_vals[15]>             24          1          -    Covered              
+            bin <normal_range[4],len_vals[15]>             24          1          -    Covered              
+            bin <normal_range[0],len_vals[15]>             16          1          -    Covered              
+            bin <normal_range[7],len_vals[7]>              24          1          -    Covered              
+            bin <normal_range[3],len_vals[7]>              15          1          -    Covered              
+            bin <normal_range[5],len_vals[7]>              21          1          -    Covered              
+            bin <normal_range[1],len_vals[7]>              19          1          -    Covered              
+            bin <normal_range[6],len_vals[7]>              34          1          -    Covered              
+            bin <normal_range[2],len_vals[7]>              29          1          -    Covered              
+            bin <normal_range[4],len_vals[7]>              19          1          -    Covered              
+            bin <normal_range[0],len_vals[7]>              25          1          -    Covered              
+            bin <normal_range[7],len_vals[11]>             24          1          -    Covered              
+            bin <normal_range[3],len_vals[11]>             22          1          -    Covered              
+            bin <normal_range[5],len_vals[11]>             19          1          -    Covered              
+            bin <normal_range[1],len_vals[11]>             19          1          -    Covered              
+            bin <normal_range[6],len_vals[11]>             19          1          -    Covered              
+            bin <normal_range[2],len_vals[11]>             22          1          -    Covered              
+            bin <normal_range[4],len_vals[11]>             24          1          -    Covered              
+            bin <normal_range[0],len_vals[11]>             25          1          -    Covered              
+            bin <normal_range[7],len_vals[3]>              18          1          -    Covered              
+            bin <normal_range[3],len_vals[3]>              17          1          -    Covered              
+            bin <normal_range[5],len_vals[3]>              20          1          -    Covered              
+            bin <normal_range[1],len_vals[3]>              17          1          -    Covered              
+            bin <normal_range[6],len_vals[3]>              14          1          -    Covered              
+            bin <normal_range[2],len_vals[3]>              20          1          -    Covered              
+            bin <normal_range[4],len_vals[3]>              24          1          -    Covered              
+            bin <normal_range[0],len_vals[3]>              23          1          -    Covered              
+            bin <normal_range[7],len_vals[13]>             30          1          -    Covered              
+            bin <normal_range[3],len_vals[13]>             34          1          -    Covered              
+            bin <normal_range[5],len_vals[13]>             24          1          -    Covered              
+            bin <normal_range[1],len_vals[13]>             22          1          -    Covered              
+            bin <normal_range[6],len_vals[13]>             15          1          -    Covered              
+            bin <normal_range[2],len_vals[13]>             25          1          -    Covered              
+            bin <normal_range[4],len_vals[13]>             28          1          -    Covered              
+            bin <normal_range[0],len_vals[13]>             27          1          -    Covered              
+            bin <normal_range[7],len_vals[5]>              24          1          -    Covered              
+            bin <normal_range[3],len_vals[5]>              13          1          -    Covered              
+            bin <normal_range[5],len_vals[5]>              26          1          -    Covered              
+            bin <normal_range[1],len_vals[5]>              13          1          -    Covered              
+            bin <normal_range[6],len_vals[5]>              16          1          -    Covered              
+            bin <normal_range[2],len_vals[5]>              29          1          -    Covered              
+            bin <normal_range[4],len_vals[5]>              20          1          -    Covered              
+            bin <normal_range[0],len_vals[5]>              21          1          -    Covered              
+            bin <normal_range[7],len_vals[9]>              15          1          -    Covered              
+            bin <normal_range[3],len_vals[9]>              21          1          -    Covered              
+            bin <normal_range[5],len_vals[9]>              26          1          -    Covered              
+            bin <normal_range[1],len_vals[9]>              24          1          -    Covered              
+            bin <normal_range[6],len_vals[9]>              30          1          -    Covered              
+            bin <normal_range[2],len_vals[9]>              22          1          -    Covered              
+            bin <normal_range[4],len_vals[9]>              29          1          -    Covered              
+            bin <normal_range[0],len_vals[9]>              20          1          -    Covered              
+            bin <normal_range[7],len_vals[1]>              20          1          -    Covered              
+            bin <normal_range[3],len_vals[1]>              20          1          -    Covered              
+            bin <normal_range[5],len_vals[1]>              21          1          -    Covered              
+            bin <normal_range[1],len_vals[1]>              17          1          -    Covered              
+            bin <normal_range[6],len_vals[1]>              21          1          -    Covered              
+            bin <normal_range[2],len_vals[1]>              25          1          -    Covered              
+            bin <normal_range[4],len_vals[1]>              20          1          -    Covered              
+            bin <normal_range[0],len_vals[1]>              24          1          -    Covered              
+            bin <normal_range[7],len_vals[14]>             17          1          -    Covered              
+            bin <normal_range[3],len_vals[14]>             23          1          -    Covered              
+            bin <normal_range[5],len_vals[14]>             23          1          -    Covered              
+            bin <normal_range[1],len_vals[14]>             20          1          -    Covered              
+            bin <normal_range[6],len_vals[14]>             26          1          -    Covered              
+            bin <normal_range[2],len_vals[14]>             26          1          -    Covered              
+            bin <normal_range[4],len_vals[14]>             27          1          -    Covered              
+            bin <normal_range[0],len_vals[14]>             15          1          -    Covered              
+            bin <normal_range[7],len_vals[6]>              20          1          -    Covered              
+            bin <normal_range[3],len_vals[6]>              29          1          -    Covered              
+            bin <normal_range[5],len_vals[6]>              29          1          -    Covered              
+            bin <normal_range[1],len_vals[6]>              18          1          -    Covered              
+            bin <normal_range[6],len_vals[6]>              21          1          -    Covered              
+            bin <normal_range[2],len_vals[6]>              25          1          -    Covered              
+            bin <normal_range[4],len_vals[6]>              30          1          -    Covered              
+            bin <normal_range[0],len_vals[6]>              13          1          -    Covered              
+            bin <normal_range[7],len_vals[10]>             29          1          -    Covered              
+            bin <normal_range[3],len_vals[10]>             21          1          -    Covered              
+            bin <normal_range[5],len_vals[10]>             26          1          -    Covered              
+            bin <normal_range[1],len_vals[10]>             21          1          -    Covered              
+            bin <normal_range[6],len_vals[10]>             25          1          -    Covered              
+            bin <normal_range[2],len_vals[10]>             21          1          -    Covered              
+            bin <normal_range[4],len_vals[10]>             27          1          -    Covered              
+            bin <normal_range[0],len_vals[10]>             27          1          -    Covered              
+            bin <normal_range[7],len_vals[2]>              25          1          -    Covered              
+            bin <normal_range[3],len_vals[2]>              17          1          -    Covered              
+            bin <normal_range[5],len_vals[2]>              21          1          -    Covered              
+            bin <normal_range[1],len_vals[2]>              27          1          -    Covered              
+            bin <normal_range[6],len_vals[2]>              19          1          -    Covered              
+            bin <normal_range[2],len_vals[2]>              27          1          -    Covered              
+            bin <normal_range[4],len_vals[2]>              18          1          -    Covered              
+            bin <normal_range[0],len_vals[2]>              21          1          -    Covered              
+            bin <normal_range[7],len_vals[12]>             21          1          -    Covered              
+            bin <normal_range[3],len_vals[12]>             27          1          -    Covered              
+            bin <normal_range[5],len_vals[12]>             24          1          -    Covered              
+            bin <normal_range[1],len_vals[12]>             30          1          -    Covered              
+            bin <normal_range[6],len_vals[12]>             13          1          -    Covered              
+            bin <normal_range[2],len_vals[12]>             18          1          -    Covered              
+            bin <normal_range[4],len_vals[12]>             19          1          -    Covered              
+            bin <normal_range[0],len_vals[12]>             37          1          -    Covered              
+            bin <normal_range[7],len_vals[4]>              27          1          -    Covered              
+            bin <normal_range[3],len_vals[4]>              25          1          -    Covered              
+            bin <normal_range[5],len_vals[4]>              28          1          -    Covered              
+            bin <normal_range[1],len_vals[4]>              16          1          -    Covered              
+            bin <normal_range[6],len_vals[4]>              25          1          -    Covered              
+            bin <normal_range[2],len_vals[4]>              24          1          -    Covered              
+            bin <normal_range[4],len_vals[4]>              25          1          -    Covered              
+            bin <normal_range[0],len_vals[4]>              22          1          -    Covered              
+            bin <normal_range[7],len_vals[8]>              19          1          -    Covered              
+            bin <normal_range[3],len_vals[8]>              22          1          -    Covered              
+            bin <normal_range[5],len_vals[8]>              19          1          -    Covered              
+            bin <normal_range[1],len_vals[8]>              20          1          -    Covered              
+            bin <normal_range[6],len_vals[8]>              20          1          -    Covered              
+            bin <normal_range[2],len_vals[8]>              16          1          -    Covered              
+            bin <normal_range[4],len_vals[8]>              19          1          -    Covered              
+            bin <normal_range[0],len_vals[8]>              22          1          -    Covered              
+            bin <normal_range[7],len_vals[0]>              16          1          -    Covered              
+            bin <normal_range[3],len_vals[0]>              22          1          -    Covered              
+            bin <normal_range[5],len_vals[0]>              24          1          -    Covered              
+            bin <normal_range[1],len_vals[0]>              20          1          -    Covered              
+            bin <normal_range[6],len_vals[0]>              17          1          -    Covered              
+            bin <normal_range[2],len_vals[0]>              19          1          -    Covered              
+            bin <normal_range[4],len_vals[0]>              25          1          -    Covered              
+            bin <normal_range[0],len_vals[0]>              30          1          -    Covered              
+            bin <lower_bound,len_vals[15]>                  1          1          -    Covered              
+            bin <lower_bound,len_vals[7]>                   1          1          -    Covered              
+            bin <lower_bound,len_vals[11]>                  1          1          -    Covered              
+            bin <lower_bound,len_vals[3]>                   1          1          -    Covered              
+            bin <lower_bound,len_vals[13]>                  1          1          -    Covered              
+            bin <lower_bound,len_vals[5]>                   2          1          -    Covered              
+            bin <lower_bound,len_vals[9]>                   2          1          -    Covered              
+            bin <lower_bound,len_vals[1]>                   1          1          -    Covered              
+            bin <lower_bound,len_vals[14]>                  1          1          -    Covered              
+            bin <lower_bound,len_vals[6]>                   2          1          -    Covered              
+            bin <lower_bound,len_vals[10]>                  1          1          -    Covered              
+            bin <lower_bound,len_vals[2]>                   1          1          -    Covered              
+            bin <lower_bound,len_vals[12]>                  1          1          -    Covered              
+            bin <lower_bound,len_vals[4]>                   2          1          -    Covered              
+            bin <lower_bound,len_vals[8]>                   1          1          -    Covered              
+            bin <lower_bound,len_vals[0]>                   2          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin ignore_4kb_cross                   179                     -    Occurred             
+            ignore_bin ignore_out                           1                     -    Occurred             
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 1
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/AXI_top/DUT/AXI_assert_inst/cover_awvalid_stable 
+                                         AXI_assertions Verilog  SVA  AXI_assertions.sv(34)
+                                                                                 0 ZERO      
+/AXI_top/DUT/AXI_assert_inst/cover_wvalid_stable 
+                                         AXI_assertions Verilog  SVA  AXI_assertions.sv(41)
+                                                                                 0 ZERO      
+/AXI_top/DUT/AXI_assert_inst/cover_bvalid_stable 
+                                         AXI_assertions Verilog  SVA  AXI_assertions.sv(48)
+                                                                              12550 Covered   
+/AXI_top/DUT/AXI_assert_inst/cover_arvalid_stable 
+                                         AXI_assertions Verilog  SVA  AXI_assertions.sv(55)
+                                                                                 0 ZERO      
+/AXI_top/DUT/AXI_assert_inst/cover_rvalid_stable 
+                                         AXI_assertions Verilog  SVA  AXI_assertions.sv(62)
+                                                                              1007476 Covered   
+
+TOTAL DIRECTIVE COVERAGE: 40.00%  COVERS: 5
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
+                                                  Count        Count    Count      Count      Count       Count  Count          
+--------------------------------------------------------------------------------------------------------------------------------
+/AXI_top/DUT/AXI_assert_inst/assert_awvalid_stable
+                     AXI_assertions.sv(33)              0          0    3513651          1    3513652          0           0 off
+/AXI_top/DUT/AXI_assert_inst/assert_wvalid_stable
+                     AXI_assertions.sv(40)              0          0    3513651          1    3513652          0           0 off
+/AXI_top/DUT/AXI_assert_inst/assert_bvalid_stable
+                     AXI_assertions.sv(47)              0      12550    3501101          1    3513652          0           2 off
+/AXI_top/DUT/AXI_assert_inst/assert_arvalid_stable
+                     AXI_assertions.sv(54)              0          0    3513651          1    3513652          0           0 off
+/AXI_top/DUT/AXI_assert_inst/assert_rvalid_stable
+                     AXI_assertions.sv(61)              0    1007476    2506175          1    3513652          0           2 off
+/AXI_top/DUT/AXI_assert_inst/assert_awvalid_no_x
+                     AXI_assertions.sv(65)              0       5033    3508618          1    3513652          0           1 off
+/AXI_top/DUT/AXI_assert_inst/assert_wvalid_no_x
+                     AXI_assertions.sv(66)              0     622680    2890971          1    3513652          0           1 off
+/AXI_top/DUT/AXI_assert_inst/assert_bvalid_no_x
+                     AXI_assertions.sv(67)              0      17583    3496068          1    3513652          0           1 off
+/AXI_top/DUT/AXI_assert_inst/assert_arvalid_no_x
+                     AXI_assertions.sv(68)              0       4996    3508655          1    3513652          0           1 off
+/AXI_top/DUT/AXI_assert_inst/assert_rvalid_no_x
+                     AXI_assertions.sv(69)              0    1613838    1899813          1    3513652          0           1 off
+/AXI_directed_sequence_pkg/AXI_directed_sequence/body/#anonblk#208936567#102#4#/#ublk#208936567#102/immed__117
+                     AXI_directed_sequence.sv(117)
+                                                        0         16          0          0         16          0           0 off
+/AXI_directed_sequence_pkg/AXI_directed_sequence/body/#anonblk#208936567#102#4#/#ublk#208936567#102/immed__106
+                     AXI_directed_sequence.sv(106)
+                                                        0         16          0          0         16          0           0 off
+/AXI_sequence_pkg/AXI_sequence/body/#ublk#33784391#20/immed__23
+                     AXI_sequence.sv(23)                0      10000          0          0      10000          0           0 off
+
+Total Coverage By Instance (filtered view): 81.57%
+
